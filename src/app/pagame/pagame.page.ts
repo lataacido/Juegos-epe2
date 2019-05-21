@@ -21,4 +21,5 @@ export class PagamePage implements OnInit {
   pagame(){
     this.navController.navigateForward('pagame')
   }
+  
 }

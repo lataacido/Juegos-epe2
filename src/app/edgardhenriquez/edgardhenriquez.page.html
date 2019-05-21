@@ -1,12 +1,49 @@
 <ion-header>
+    <ion-toolbar style="color:rgb(0, 0, 0);">
+        <ion-buttons slot="start">
+          <ion-button (click)="paginas()">
+            <ion-icon slot="icon-only" name="bug" style="color:rgb(88, 4, 4)"></ion-icon>
+          </ion-button>
+          <ion-button (click)="pagame()">
+            <ion-icon slot="icon-only" name="card" style="color:rgb(88, 4, 4)"></ion-icon>
+          </ion-button>
+          <ion-button (click)="tabs()">
+              <ion-icon slot="icon-only" name="home" style="color:rgb(88, 4, 4)"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+        <ion-title>Init Game</ion-title>       
+      </ion-toolbar>
   <ion-toolbar>
-    <ion-title>edgardhenriquez</ion-title>
+    <ion-title>Metroid</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<ion-card style="background: rgb(0, 0, 0)">
+    <ion-card-title style="font-weight: bold; font-size: 30px; color: white;">Sobre Metroid</ion-card-title>
+     <p style="font-weight: bold; font-size: 12x; color: white; text-align: justify;">Metroid narra las misiones de la cazarrecompensas Samus Aran, quien trata de proteger a la
+     galaxia de las depredaciones de los Piratas Espaciales y sus intentos de aprovechar el poder de 
+     las criaturas «Metroid», una raza de organismos depredadores que tienen la habilidad de obtener la 
+     energía de diversos seres vivos. La franquicia ha sido frecuentemente citada como una de las 
+     primeras en la industria de los videojuegos cuyo argumento se centra en una protagonista femenina,
+     y se ha destacado por su sistema de juego no lineal.</p>
+    </ion-card>
 
-
-
+    
+    <ion-button expand="full" color=light (click)="presentActionSheet()"style="text-align: justify; font-weight: bold; font-size: 15px; color:green;">Cagandola</ion-button>
     <ion-button expand="full" color=light (click)="paginas()"style="text-align: justify; font-weight: bold; font-size: 15px; color:green;">Volver</ion-button>
 </ion-content>

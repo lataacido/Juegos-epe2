@@ -15,4 +15,8 @@ export class Tab3Page {
   pagame(){
     this.navController.navigateForward('pagame')
   }
+  
+  tabs(){
+    this.navController.navigateForward('tabs')
+  }
 }

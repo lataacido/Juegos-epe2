@@ -14,5 +14,8 @@ export class CatalinariosPage implements OnInit {
   paginas(){
     this.navController.navigateForward('paginas')
   }
+  tabs(){
+    this.navController.navigateForward('tabs')
+  }
 
 }

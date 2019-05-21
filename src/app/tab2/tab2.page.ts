@@ -18,6 +18,10 @@ export class Tab2Page {
     this.navController.navigateForward('pagame')
   }
 
+  tabs(){
+    this.navController.navigateForward('tabs')
+  }
+
   async presentAlert() {
     const alert = await this.alertController.create({
       header: 'Muchas gracias',

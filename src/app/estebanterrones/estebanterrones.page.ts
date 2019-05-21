@@ -13,4 +13,8 @@ export class EstebanterronesPage implements OnInit {
   paginas(){
     this.navController.navigateForward('paginas')
   }
+  
+  tabs(){
+    this.navController.navigateForward('tabs')
+  }
 }
