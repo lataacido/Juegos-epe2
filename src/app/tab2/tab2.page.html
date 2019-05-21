@@ -1,9 +1,43 @@
 <ion-header>
+  <ion-toolbar style="color:rgb(0, 0, 0);">
+    <ion-buttons slot="start">
+      <ion-button (click)="paginas()">
+        <ion-icon slot="icon-only" name="bug" style="color:rgb(88, 4, 4)"></ion-icon>
+      </ion-button>
+      <ion-button (click)="pagame()">
+        <ion-icon slot="icon-only" name="card" (click)="pagame()" style="color:rgb(88, 4, 4)"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Init Game</ion-title>
+  </ion-toolbar>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      Quienes somos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-img src="/assets/icon/quienessomos1.png"></ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <p style="text-align: justify; font-weight: bold; font-size: 15px; color:white;">
+          Init games es una aplicacion diseñada por 4 estudiantes de ingenieria con el fin de proporcionar informacion
+          actualizada
+          a los jugadores de diferentes areas, sirve para informarce de cada una de las actualidades del ambito de los
+          videojuegos.</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-button expand="full" (click)="presentAlert()">
+    <ion-icon slot="icon-only"></ion-icon>Valoranos
+  </ion-button>
+</ion-content>

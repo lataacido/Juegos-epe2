@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-toolbar style="color:rgb(0, 0, 0);">
+        <ion-buttons slot="start">
+          <ion-button (click)="paginas()">
+            <ion-icon slot="icon-only" name="bug" style="color:rgb(88, 4, 4)"></ion-icon>
+          </ion-button>
+          <ion-button (click)="pagame()">
+            <ion-icon slot="icon-only" name="card" (click)="pagame()" style="color:rgb(88, 4, 4)"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-title>Init Game</ion-title>
+      </ion-toolbar>
+  <ion-toolbar>
+    <ion-title>Comprar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="full" fill="outline" (click)="tabs()">Volver</ion-button>
+</ion-content>

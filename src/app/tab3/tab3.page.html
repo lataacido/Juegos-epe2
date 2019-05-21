@@ -1,9 +1,82 @@
 <ion-header>
+  <ion-toolbar style="color:black;">
+    <ion-buttons slot="start">
+      <ion-button (click)="paginas()">
+        <ion-icon slot="icon-only" name="bug" style="color:rgb(88, 4, 4)"></ion-icon>
+      </ion-button>
+      <ion-button (click)="pagame()">
+        <ion-icon slot="icon-only" name="card" (click)="pagame()" style="color:rgb(88, 4, 4)"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Init Game</ion-title>
+  </ion-toolbar>
   <ion-toolbar>
     <ion-title>
-      Tab Three
+      Acerca de...
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content style="font-weight: bold; font-size: 50px; color:white;">
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-img src="/assets/icon/arcade1.png"></ion-img>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <ion-card-header>
+      <ion-card-title style="font-weight: bold; font-size: 50px; color: white;">Integrantes</ion-card-title>
+      <p>Catalina Rios</p>
+      <p>Esteban Terrones</p>
+      <p>Felipe Farias</p>
+      <p>Edgard Henriquez</p>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card style="background: rgb(17, 79, 82)">
+    <ion-item>
+      <ion-icon name="pin" slot="start"></ion-icon>
+      <ion-label>Conocenos mas...</ion-label>
+    </ion-item>
+
+    <ion-card-content style="background:  rgb(17, 79, 82)">
+      <ion-item>
+        Catalina
+        <ion-button fill="outline" slot="end" style="font-weight: bold; font-size: 15px; color: rgb(7, 7, 7);"
+          href="https://www.facebook.com/nefertari.hijadeaton">
+          <ion-icon name="logo-facebook" slot="start"></ion-icon>Aqui
+        </ion-button>
+      </ion-item>
+    </ion-card-content>
+
+    <ion-card-content>
+      <ion-item>
+        Esteban
+        <ion-button fill="outline" slot="end" style="font-weight: bold; font-size: 15px; color: rgb(7, 7, 7);"
+          href="https://www.facebook.com/tecrocrash">
+          <ion-icon name="logo-facebook" slot="start"></ion-icon>Aqui
+        </ion-button>
+      </ion-item>
+    </ion-card-content>
+    <ion-card-content>
+      <ion-item>
+        Felipe
+        <ion-button fill="outline" slot="end" style="font-weight: bold; font-size: 15px; color: rgb(7, 7, 7);" href="">
+          <ion-icon name="logo-facebook" slot="start"></ion-icon>Aqui
+        </ion-button>
+      </ion-item>
+    </ion-card-content>
+    <ion-card-content>
+      <ion-item>
+        Edgard
+        <ion-button fill="outline" slot="end" style="font-weight: bold; font-size: 15px; color: rgb(7, 7, 7);"
+          href="https://www.facebook.com/lata.edgard.henriquez">
+          <ion-icon name="logo-facebook" slot="start"></ion-icon>Aqui
+        </ion-button>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

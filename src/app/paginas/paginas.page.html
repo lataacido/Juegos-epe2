@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar style="color:rgb(0, 0, 0);">
+        <ion-buttons slot="start">
+          <ion-button (click)="paginas()">
+            <ion-icon slot="icon-only" name="bug" style="color:rgb(88, 4, 4)"></ion-icon>
+          </ion-button>
+          <ion-button (click)="pagame()">
+            <ion-icon slot="icon-only" name="card" (click)="pagame()" style="color:rgb(88, 4, 4)"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <ion-title>Init Game</ion-title>
+      </ion-toolbar>
+  <ion-toolbar>
+    <ion-title>Mejor Contenido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-button expand="full"  color=dark (click)="esteban()" style="text-align: justify; font-weight: bold; font-size: 15px;  ">Monster Hunter</ion-button>
+    <ion-button expand="full"  color=dark (click)="catalina()" style="text-align: justify; font-weight: bold; font-size: 15px; ">Starcraft</ion-button>
+    <ion-button expand="full" color=dark (click)="edgard()" style="text-align: justify; font-weight: bold; font-size: 15px; ">Metroid</ion-button>
+    <ion-button expand="full" color=dark (click)="felipe()" style="text-align: justify; font-weight: bold; font-size: 15px; ">Felipe</ion-button>
+<br>
+  <ion-button expand="full" color=light (click)="tabs()"style="text-align: justify; font-weight: bold; font-size: 15px; color:green;">Volver</ion-button>
+</ion-content>
