@@ -7,7 +7,11 @@ const routes: Routes = [
   { path: 'felipe', loadChildren: './felipe/felipe.module#FelipePageModule' },
   { path: 'edgardhenriquez', loadChildren: './edgardhenriquez/edgardhenriquez.module#EdgardhenriquezPageModule' },
   { path: 'paginas', loadChildren: './paginas/paginas.module#PaginasPageModule' },
-  { path: 'pagame', loadChildren: './pagame/pagame.module#PagamePageModule' }
+  { path: 'pagame', loadChildren: './pagame/pagame.module#PagamePageModule' },
+  { path: 'metroid', loadChildren: './metroid/metroid.module#MetroidPageModule' },
+  { path: 'federacion', loadChildren: './federacion/federacion.module#FederacionPageModule' },
+  { path: 'samus', loadChildren: './samus/samus.module#SamusPageModule' },
+  { path: 'titulos', loadChildren: './titulos/titulos.module#TitulosPageModule' }
 
 ];
 @NgModule({

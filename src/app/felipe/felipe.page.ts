@@ -17,4 +17,8 @@ export class FelipePage implements OnInit {
   tabs(){
     this.navController.navigateForward('tabs')
   }
+
+  pagame(){
+    this.navController.navigateForward('pagame')
+  }
 }

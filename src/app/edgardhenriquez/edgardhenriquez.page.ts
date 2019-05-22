@@ -7,7 +7,6 @@ import { ActionSheetController } from '@ionic/angular';
   styleUrls: ['./edgardhenriquez.page.scss'],
 })
 export class EdgardhenriquezPage implements OnInit {
-
  
   constructor(public navController : NavController, public actionSheetController: ActionSheetController ) { }
   ngOnInit() {
@@ -20,41 +19,36 @@ export class EdgardhenriquezPage implements OnInit {
     this.navController.navigateForward('tabs')
   }
 
-  async presentActionSheet() {
+  async ACTIONSHEET() {
     const actionSheet = await this.actionSheetController.create({
-      header: 'Albums',
+      header: 'Sobre que quieres saber mas',
       buttons: [{
-        text: 'Delete',
-        role: 'destructive',
-        icon: 'trash',
+        text: 'Samus',
+        icon: 'eye',
         handler: () => {
-          console.log('Delete clicked');
+          this.navController.navigateForward('samus')
         }
-      }, {
-        text: 'Share',
-        icon: 'share',
+      },{
+        text: 'Metroids',
+        icon: 'eye',
         handler: () => {
-          console.log('Share clicked');
+          this.navController.navigateForward('metroid')
         }
-      }, {
-        text: 'Play (open modal)',
-        icon: 'arrow-dropright-circle',
+      },{
+        text: 'Federacion Galactica',
+        icon: 'eye',
         handler: () => {
-          console.log('Play clicked');
+          this.navController.navigateForward('federacion')
         }
-      }, {
-        text: 'Favorite',
-        icon: 'heart',
+      }, {text: 'Titulos',
+        icon: 'eye',
         handler: () => {
-          console.log('Favorite clicked');
-        }
-      }, {
+        this.navController.navigateForward('titulos')
+      }
+      },{
         text: 'Cancel',
         icon: 'close',
-        role: 'cancel',
-        handler: () => {
-          console.log('Cancel clicked');
-        }
+        role: 'cancel'
       }]
     });
     await actionSheet.present();

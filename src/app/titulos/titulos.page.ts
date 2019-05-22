@@ -1,16 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import {NavController} from '@ionic/angular';
 @Component({
-  selector: 'app-catalinarios',
-  templateUrl: './catalinarios.page.html',
-  styleUrls: ['./catalinarios.page.scss'],
+  selector: 'app-titulos',
+  templateUrl: './titulos.page.html',
+  styleUrls: ['./titulos.page.scss'],
 })
-export class CatalinariosPage implements OnInit {
+export class TitulosPage implements OnInit {
 
- 
-  constructor(public navController : NavController ) { }
-  ngOnInit() {
+  constructor(public navController : NavController) { }
+
+  edgardhenriquez(){
+    this.navController.navigateForward('edgardhenriquez')
   }
+
   paginas(){
     this.navController.navigateForward('paginas')
   }
@@ -21,6 +23,9 @@ export class CatalinariosPage implements OnInit {
 
   pagame(){
     this.navController.navigateForward('pagame')
+  }
+
+  ngOnInit() {
   }
 
 }
