@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {NavController} from '@ionic/angular';
 import {AlertController} from '@ionic/angular';
+
 @Component({
   selector: 'app-estebanterrones',
   templateUrl: './estebanterrones.page.html',
@@ -19,6 +20,47 @@ export class EstebanterronesPage implements OnInit {
     });
     alert.present();
   }
+
+  Monstro1 : boolean;
+  Monstro2 : boolean;
+
+  async verMonstro1(){
+
+    if(this.Monstro1){
+
+    }else{
+      
+      let alert = await this.alertCrtl.create({
+        header: 'Anjanath - Monster Hunter World',
+        subHeader : 'El Anjanath patrulla el Bosque Antiguo en busca de su comida favorita, Aptonoth. Este monstruo beligerante atacará cualquier cosa sin la menor provocación.',
+        message:'<ion-img src="/assets/anjanath.jpg"></ion-img>',
+        buttons:['Cerrar']
+      });
+      alert.present();
+    
+    }
+
+  }
+  
+  async verMonstro2(){
+
+    if(this.Monstro2){
+
+    }else{
+      
+      let alert = await this.alertCrtl.create({
+        header: 'Nergigante - Monster Hunter World',
+        subHeader : 'Un terrible dragón anciano que aparece cuando otros ancianos están cerca. Su inclinación por la destrucción está bien documentada',
+        message:'<ion-img src="/assets/nergigante.jpg"></ion-img>',
+        buttons:['Cerrar']
+      });
+      alert.present();
+    
+    }
+
+  }
+    
+
 
   paginas(){
     this.navController.navigateForward('paginas')

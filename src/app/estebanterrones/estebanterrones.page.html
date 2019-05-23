@@ -15,7 +15,7 @@
        
       </ion-toolbar>
   <ion-toolbar>
-    <ion-title>estebanterrones</ion-title>
+    <ion-title>Monster Hunter: World</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -98,9 +98,30 @@
                       </ion-col>
 
 </ion-radio-group>
+
 <ion-col size="12">
 <ion-button expand="full" color=light  (click)="verSelecion()" style="text-align: justify; font-weight: bold; font-size: 15px; color:green;">Ver Contenido </ion-button>
 </ion-col>
+
+
+<ion-list>
+  <ion-list-header>
+    <ion-label>
+      Ver Monster
+    </ion-label>
+  </ion-list-header>
+  <ion-item>
+    <ion-label>Anjanath</ion-label>
+    <ion-checkbox slot="start"  [(ngModel)]="Monstro1" 
+    color="success" (click)="verMonstro1()"></ion-checkbox >
+  </ion-item>
+  <ion-item>
+    <ion-label>Nergigante </ion-label>
+    <ion-checkbox slot="start"  [(ngModel)]="Monstro2" 
+    color="success" (click)="verMonstro2()"> </ion-checkbox >
+  </ion-item>
+</ion-list>
+
         </ion-row>
     </ion-grid>
 
