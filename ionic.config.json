@@ -1,5 +1,7 @@
 {
   "name": "juegosepe2",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
