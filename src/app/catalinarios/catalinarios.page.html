@@ -15,7 +15,7 @@
        
       </ion-toolbar>
   <ion-toolbar>
-    <ion-title>catalinarios</ion-title>
+    <ion-title>Starcraft</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -50,22 +50,24 @@
         Personajes de StarCraft
       </ion-label>
       <ion-list>
-        <ion-item>
-          <ion-label>Kerrigan</ion-label>
-          <ion-radio color="primary" name="perso" value="kerrigan"></ion-radio>
+        <ion-item >
+          <ion-label>Sara Kerrigan</ion-label>
+          <ion-radio color="primary"  name="perso" value="Soy Kerrigan"></ion-radio>
+         
         </ion-item>
-        <ion-item>
+        <ion-item >
             <ion-label>Jim Raynor</ion-label>
-            <ion-radio color="primary" name="perso" value="raynor"></ion-radio>
+            <ion-radio color="primary" name="perso" value="Soy Raynor"></ion-radio>
           </ion-item>
-          <ion-item>
-        <ion-label>Zeratul</ion-label>
-          <ion-radio color="primary" name="perso" value="zeratul">{{perso}} </ion-radio>
+          <ion-item >
+        <ion-label>Prelado Zeratul</ion-label>
+          <ion-radio color="primary" name="perso" value="Soy Zeratul"></ion-radio>
         </ion-item>
       </ion-list>
     </ion-radio-group>
     <ion-item>
-      <ion-button color="dark" (click)="verSeleccion()">ver seleccion</ion-button>
+      <ion-label>Ver seleccion</ion-label>
+      <ion-toggle [(ngModel)]="boton" (click)="verSeleccion()"></ion-toggle><br>
     </ion-item>
     <ion-button expand="full" color=light (click)="paginas()"style="text-align: justify; font-weight: bold; font-size: 15px; color:green;">Volver</ion-button>
 </ion-content>

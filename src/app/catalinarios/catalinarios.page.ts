@@ -7,8 +7,8 @@ import { AlertController } from '@ionic/angular';
   styleUrls: ['./catalinarios.page.scss'],
 })
 export class CatalinariosPage implements OnInit {
-  perso : string;
- 
+ perso : string;
+ public boton:boolean=false;
   constructor(public navController : NavController, public alertCtrl: AlertController ) { }
   ngOnInit() {
   }
@@ -22,7 +22,8 @@ export class CatalinariosPage implements OnInit {
 
   async verSeleccion(){
     let alert = await this.alertCtrl.create({
-      message: this.perso,
+      header: this.perso,
+      
       buttons:['OK']
     });
     alert.present();
