@@ -23,6 +23,7 @@ export class EstebanterronesPage implements OnInit {
 
   Monstro1 : boolean;
   Monstro2 : boolean;
+  Monstro3 : boolean;
 
   async verMonstro1(){
 
@@ -52,6 +53,24 @@ export class EstebanterronesPage implements OnInit {
         header: 'Nergigante - Monster Hunter World',
         subHeader : 'Un terrible dragón anciano que aparece cuando otros ancianos están cerca. Su inclinación por la destrucción está bien documentada',
         message:'<ion-img src="/assets/nergigante.jpg"></ion-img>',
+        buttons:['Cerrar']
+      });
+      alert.present();
+    
+    }
+
+  }
+  
+  async verMonstro3(){
+
+    if(this.Monstro3){
+
+    }else{
+      
+      let alert = await this.alertCrtl.create({
+        header: 'Diablos - Monster Hunter World',
+        subHeader : 'El Diablos es un Wyvern Volador que domina zonas desérticas, fue introducido en Monster Hunter. ',
+        message:'<ion-img src="/assets/Diablos.jpg"></ion-img>',
         buttons:['Cerrar']
       });
       alert.present();
