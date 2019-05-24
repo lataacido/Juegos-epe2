@@ -15,19 +15,14 @@ informarte de los ultimos juegos y de las nuevas tendencias
 ICONOS:
 
 Estos son los principales iconos de la app.
-arcade1.png
-control.png
-control.png
 
-Por otro lado esta el icono principal de la aplicacion y el splash.
+![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/resources/android/icon/drawable-hdpi-icon.png)
+![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/resources/android/splash/drawable-land-hdpi-screen.png)
 
-icon.png
-splash.png
 
 IMAGENES:
 
-se encuentran alojados en el archvio assets y icon, hay amplia variedad de fotos
-
+![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/fondoSC.jpg)
 
 El proyecto esta conformado por
 
