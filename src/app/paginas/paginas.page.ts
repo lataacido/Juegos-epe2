@@ -6,7 +6,7 @@ import {NavController} from '@ionic/angular';
   styleUrls: ['./paginas.page.scss'],
 })
 export class PaginasPage implements OnInit {
-
+  // Metodoso para navegar entre paginas
   constructor(public navController : NavController ) { }
   tabs(){
     this.navController.navigateForward('tabs')

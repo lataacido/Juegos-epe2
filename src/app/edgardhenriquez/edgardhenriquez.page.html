@@ -1,4 +1,5 @@
 <ion-header>
+  <!-- Toolbar con botones y colores cambiados-->
   <ion-toolbar style="color:rgb(0, 0, 0);">
     <ion-buttons slot="start">
       <ion-button (click)="paginas()">
@@ -11,6 +12,7 @@
         <ion-icon slot="icon-only" name="home" style="color:rgb(88, 4, 4)"></ion-icon>
       </ion-button>
     </ion-buttons>
+    <!-- Titulo -->
     <ion-title>Init Game</ion-title>
   </ion-toolbar>
   <ion-toolbar>
@@ -33,6 +35,7 @@
   <br>
   <br>
   <br>
+  <!-- Informacion dentro de un ion card -->
   <ion-card style="background: rgb(0, 0, 0)">
     <ion-card-title style="font-weight: bold; font-size: 30px; color: white;">Sobre Metroid</ion-card-title>
     <p style="font-weight: bold; font-size: 12x; color: white; text-align: justify;">Metroid narra las misiones de la
@@ -44,9 +47,10 @@
       y se ha destacado por su sistema de juego no lineal.</p>
   </ion-card>
 
-
+<!-- Con este boton llamamos al metodo actionsheet para dsplegar la hoja de accion-->
   <ion-button expand="full" color=light (click)="ACTIONSHEET()"
     style="text-align: justify; font-weight: bold; font-size: 15px; color:green;">Quieres saber mas?</ion-button>
+    <!-- Boton volver -->
   <ion-button expand="full" color=light (click)="paginas()"
     style="text-align: justify; font-weight: bold; font-size: 15px; color:green;">Volver</ion-button>
 </ion-content>
