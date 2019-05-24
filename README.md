@@ -12,8 +12,11 @@ informarte de los ultimos juegos y de las nuevas tendencias
 <h3>Estos son los principales iconos de la app.</h3>
 
 <h3>Icono principal de la app</h3>
+  
 ![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/resources/android/icon/drawable-hdpi-icon.png) <br>
+
 <h3>Splash screen (imagen de inicio de la app)</h3>
+
 ![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/resources/android/splash/drawable-land-hdpi-screen.png)
 
 
