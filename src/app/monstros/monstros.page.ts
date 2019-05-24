@@ -27,16 +27,16 @@ export class MonstrosPage implements OnInit {
     }else{
       
       let alert = await this.alertCrtl.create({
-        header: 'Anjanath - Monster Hunter World',
-        subHeader : '¡Compra este pack para ahorrar un 6% en los 2 artículos!',
-        message:'<ion-img src="/assets/compra2.png"></ion-img>',
+        header: 'Comprar Monster Hunter: World',
+     
+        message:'Su precio de venta es de CLP$ 37.999',
         buttons: [
           {
             text : 'Aceptar',
             handler : (acepta) =>{console.log('Aceptó');}
           },{
             text : 'Cancelar',
-            handler : (cancelo) =>{console.log('Canceló');}
+            handler : (cancelo) =>{console.log('No gracias');}
           }
         ]
       });
@@ -54,8 +54,8 @@ export class MonstrosPage implements OnInit {
       
       let alert = await this.alertCrtl.create({
         header: 'Nergigante - Monster Hunter World',
-        subHeader : 'Un terrible dragón anciano que aparece cuando otros ancianos están cerca. Su inclinación por la destrucción está bien documentada',
-        message:'<ion-img src="/assets/nergigante.jpg"></ion-img>',
+        subHeader : '¡Compra este pack para ahorrar un 6% en los 2 artículos!',
+        message:'<ion-img src="/assets/compra2.png"></ion-img>',
         buttons:['Cerrar']
       });
       alert.present();
