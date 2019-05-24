@@ -12,6 +12,12 @@ export class EstebanterronesPage implements OnInit {
   constructor(public navController : NavController,public alertCrtl : AlertController ) { }
   ngOnInit() {
   }
+
+
+irPagina(){
+  this.navController.navigateForward('monstros');
+  }
+
   mhw: string;
   async verSelecion(){
     let alert = await this.alertCrtl.create({
