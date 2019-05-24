@@ -28,9 +28,17 @@ export class MonstrosPage implements OnInit {
       
       let alert = await this.alertCrtl.create({
         header: 'Anjanath - Monster Hunter World',
-        subHeader : 'El Anjanath patrulla el Bosque Antiguo en busca de su comida favorita, Aptonoth. Este monstruo beligerante atacará cualquier cosa sin la menor provocación.',
-        message:'<ion-img src="/assets/anjanath.jpg"></ion-img>',
-        buttons:['Cerrar']
+        subHeader : '¡Compra este pack para ahorrar un 6% en los 2 artículos!',
+        message:'<ion-img src="/assets/compra2.png"></ion-img>',
+        buttons: [
+          {
+            text : 'Aceptar',
+            handler : (acepta) =>{console.log('Aceptó');}
+          },{
+            text : 'Cancelar',
+            handler : (cancelo) =>{console.log('Canceló');}
+          }
+        ]
       });
       alert.present();
     
