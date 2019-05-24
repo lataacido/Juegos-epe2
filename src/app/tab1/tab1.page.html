@@ -45,37 +45,37 @@
 
       <ion-item>
         <ion-label>Accion</ion-label>
-        <ion-radio slot="start" value="Accion" checked (click)="accion()"></ion-radio>
+        <ion-radio slot="start" value="Accion" checked [(ngModel)]="accion1" (click)="accion()"></ion-radio>
       </ion-item>
 
       <ion-item>
         <ion-label>Arcade</ion-label>
-        <ion-radio slot="start" value="Arcade" (click)="arcade()"></ion-radio>
+        <ion-radio slot="start" value="Arcade" [(ngModel)]="arcade" (click)="arcade()"></ion-radio>
       </ion-item>
 
       <ion-item>
         <ion-label>Estrategia</ion-label>
-        <ion-radio slot="start" value="Estrategia" (click)="estrategia()"></ion-radio>
+        <ion-radio slot="start" value="Estrategia" [(ngModel)]="estrategia1" (click)="estrategia()"></ion-radio>
       </ion-item>
 
       <ion-item>
         <ion-label>Deporte</ion-label>
-        <ion-radio slot="start" value="Deporte" (click)="deporte()"></ion-radio>
+        <ion-radio slot="start" value="Deporte" [(ngModel)]="deporte1" (click)="deporte()"></ion-radio>
       </ion-item>
 
       <ion-item>
         <ion-label>Simulacion</ion-label>
-        <ion-radio slot="start" value="Simulacion" (click)="simulacion()"></ion-radio>
+        <ion-radio slot="start" value="Simulacion" [(ngModel)]="simulacion1" (click)="simulacion()"></ion-radio>
       </ion-item>
 
       <ion-item>
         <ion-label>RPG</ion-label>
-        <ion-radio slot="start" value="RPG" (click)="rpg()"></ion-radio>
+        <ion-radio slot="start" value="RPG" [(ngModel)]="rpg1" (click)="rpg()"></ion-radio>
       </ion-item>
 
       <ion-item>
         <ion-label>Peleas</ion-label>
-        <ion-radio slot="start" value="Peleas" (click)="peleas()"></ion-radio>
+        <ion-radio slot="start" value="Peleas" [(ngModel)]="peleas1"  (click)="peleas()"></ion-radio>
       </ion-item>
     </ion-radio-group>
   </ion-list>
