@@ -1,4 +1,4 @@
-# Juegos EPE2
+<h1>JUEGOS-EPE2</h1>
 
 <h1>TITULO: INIT GAME</h1>
 
@@ -29,7 +29,7 @@ informarte de los ultimos juegos y de las nuevas tendencias
 
 <h4>El proyecto esta conformado por
 
-Catalina Rios
-Felipe Farias
-Esteban Terrones
+Catalina Rios<br>
+Felipe Farias<br>
+Esteban Terrones<br>
 Edgard Henriquez</h4>
