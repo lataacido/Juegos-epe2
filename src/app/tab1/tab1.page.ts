@@ -16,7 +16,7 @@ constructor(public navController : NavController, public toastController: ToastC
   pagame(){
     this.navController.navigateForward('pagame')
   }
-  
+  //controladores para mostrar toast
   async accion() {
     const toast = await this.toastController.create({
       header: 'Accion',

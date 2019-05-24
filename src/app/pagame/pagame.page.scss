@@ -1,6 +1,8 @@
+// url para cambiar el fondo de la pagina
 ion-content{
     --background: #fff url('../../assets/fondo.jpg') no-repeat center center / cover;
 }
+//scss para ajustar la imagen al centro y en tamaño de 100 pixeles
 ion-img {
   height:100px;
   width: 100px;
