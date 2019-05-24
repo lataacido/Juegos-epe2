@@ -16,13 +16,16 @@ ICONOS:
 
 Estos son los principales iconos de la app.
 
-![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/resources/android/icon/drawable-hdpi-icon.png)
+![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/resources/android/icon/drawable-hdpi-icon.png) <br>
 ![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/resources/android/splash/drawable-land-hdpi-screen.png)
 
 
 IMAGENES:
 
-![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/fondoSC.jpg)
+![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/fondoSC.jpg)<br>
+![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/samus.png)<br>
+![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/resident.jpg)<br>
+![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/zerosuit.jpg)<br>
 
 El proyecto esta conformado por
 
