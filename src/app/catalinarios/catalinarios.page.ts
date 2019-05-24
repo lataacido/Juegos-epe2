@@ -23,7 +23,7 @@ export class CatalinariosPage implements OnInit {
   async verSeleccion(){
     let alert = await this.alertCtrl.create({
       header: this.perso,
-      message: "Soy la reina de las cuchillas",
+      message: "Soy la reina de las cuchillas!",
       
       buttons:['OK']
     });
