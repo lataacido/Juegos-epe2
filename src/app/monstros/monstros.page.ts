@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import {NavController} from '@ionic/angular';
-import {AlertController} from '@ionic/angular';
+import {AlertController,ToastController} from '@ionic/angular';
 
 @Component({
   selector: 'app-monstros',
@@ -10,7 +10,7 @@ import {AlertController} from '@ionic/angular';
 })
 export class MonstrosPage implements OnInit {
 
-  constructor(public navController : NavController,public alertCrtl : AlertController ) { }
+  constructor(public navController : NavController,public alertCrtl : AlertController ,public toastController: ToastController ) { }
 
   ngOnInit() {
   }
@@ -20,6 +20,9 @@ export class MonstrosPage implements OnInit {
   Comprar3 : boolean;
   Comprar4 : boolean;
   verResul1 : any;
+  verResul2 : any;
+  verResul3 : any;
+  verResul4 : any;
 
   async verComprar1(){
 
@@ -27,31 +30,29 @@ export class MonstrosPage implements OnInit {
 
     }else{
       
-      let alert = await this.alertCrtl.create({
-        header: 'Comprar Monster Hunter: World',
+      const toast = await this.toastController.create({
+        header: 'Compraste Monster Hunter: World',
      
         message:'Su precio de venta es de CLP$ 37.999',
-        inputs : [
-          {
-            name :'37.999',
-            type : 'number',
-            placeholder : 'Numero 1'
-          }
-        ],
+        position: 'top',
         buttons: [
           {
-            text : 'Aceptar',
-            handler : (dato4) => {
-              console.log(dato4.number1);
-            //handler : (acepta) =>{console.log('Aceptó');
-          }
-          },{
-            text : 'Cancelar',
-            handler : (cancelo) =>{console.log('No gracias');}
+            side: 'start',
+            icon: 'logo-game-controller-b',
+           
+            handler: () => {
+              console.log('Favorite clicked');
+            }
+          }, {
+            text: 'OK',
+            role: 'cancel',
+            handler: () => {
+              console.log('Cancel clicked');
+            }
           }
         ]
       });
-      alert.present();
+      toast.present();
     
     }
 
@@ -63,21 +64,28 @@ export class MonstrosPage implements OnInit {
 
     }else{
       
-      let alert = await this.alertCrtl.create({
-        header: 'Comprar Monster Hunter: World Deluxe Edition PACK (?) ',
-        subHeader : '¡Compra este pack para ahorrar un 6% en los 2 artículos!',
-        message:'<ion-img src="/assets/compra2.png"></ion-img><BR>-6% Tu precio: CLP$ 44.573',
+      const toast = await this.toastController.create({
+        header: 'Compraste Monster Hunter: World Deluxe Edition PACK (?) ',
+        message:'¡Compra este pack para ahorrar un 6% en los 2 artículos!  -6% Tu precio: CLP$ 44.573',
+        position: 'top',
         buttons: [
           {
-            text : 'Aceptar',
-            handler : (acepta) =>{console.log('Aceptó');}
-          },{
-            text : 'Cancelar',
-            handler : (cancelo) =>{console.log('No gracias');}
+            side: 'start',
+            icon: 'logo-game-controller-b',
+           
+            handler: () => {
+              console.log('Favorite clicked');
+            }
+          }, {
+            text: 'OK',
+            role: 'cancel',
+            handler: () => {
+              console.log('Cancel clicked');
+            }
           }
         ]
       });
-      alert.present();
+      toast.present();
     
     }
 
@@ -89,51 +97,67 @@ export class MonstrosPage implements OnInit {
 
     }else{
       
-      let alert = await this.alertCrtl.create({
-        header: 'Comprar Monster Hunter: World - Additional Gesture Bundle 2 PACK (?) ',
-        subHeader : '¡Compra este pack para ahorrar un 37% en los 4 artículos!',
-        message:'<ion-img src="/assets/compra3.png"></ion-img><BR>-37% Tu precio: CLP$ 3.272',
+      const toast = await this.toastController.create({
+        header: 'Compraste Monster Hunter: World - Additional Gesture Bundle 2 PACK (?)',
+        message:' ¡Compra este pack para ahorrar un 37% en los 4 artículos! -37% Tu precio: CLP$ 3.272',
+        position: 'top',
         buttons: [
           {
-            text : 'Aceptar',
-            handler : (acepta) =>{console.log('Aceptó');}
-          },{
-            text : 'Cancelar',
-            handler : (cancelo) =>{console.log('No gracias');}
+            side: 'start',
+            icon: 'logo-game-controller-b',
+           
+            handler: () => {
+              console.log('Favorite clicked');
+            }
+          }, {
+            text: 'OK',
+            role: 'cancel',
+            handler: () => {
+              console.log('Cancel clicked');
+            }
           }
         ]
       });
-      alert.present();
+      toast.present();
     
     }
 
   }
+
   async verComprar4(){
 
     if(this.Comprar4){
 
     }else{
       
-      let alert = await this.alertCrtl.create({
-        header: 'Comprar Monster Hunter: World - Additional Sticker Set Bundle 1 PACK (?) ',
-        subHeader : '¡Compra este pack para ahorrar un 24% en los 2 artículos!',
-        message:'<ion-img src="/assets/compra4.png"></ion-img><BR>-24% Tu precio:  CLP$ 1.974 ',
+      const toast = await this.toastController.create({
+        header: 'Compraste Monster Hunter: World - Additional Sticker Set Bundle 1 PACK (?) ',
+        message:'¡Compra este pack para ahorrar un 24% en los 2 artículos!  -24% Tu precio:  CLP$ 1.974 ',
+ position: 'top',
+ 
         buttons: [
           {
-            text : 'Aceptar',
-            handler : (acepta) =>{console.log('Aceptó');}
-          },{
-            text : 'Cancelar',
-            handler : (cancelo) =>{console.log('No gracias');}
+            side: 'start',
+            icon: 'logo-game-controller-b',
+            
+           
+            handler: () => {
+              console.log('Favorite clicked');
+            }
+          }, {
+            text: 'OK',
+            role: 'cancel',
+            handler: () => {
+              console.log('Cancel clicked');
+            }
           }
         ]
       });
-      alert.present();
+      toast.present();
     
     }
 
   }
-
   paginas(){
     this.navController.navigateForward('paginas')
   }
