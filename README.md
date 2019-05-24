@@ -1,20 +1,15 @@
 # Juegos EPE2
 
-TITULO: 
+<h1>TITULO: INIT GAME</h1>
 
-INIT GAME
-
-TEXTOS: 
-
-*parte del texto principal*
-
-Init games, una plataforma
+<h1>TEXTOS:</h1> 
+<p>Init games, una plataforma
 informativa de videojuegos, en ella podras
 informarte de los ultimos juegos y de las nuevas tendencias
+</p>
+<h1>ICONOS:</h1>
 
-ICONOS:
-
-Estos son los principales iconos de la app.
+<h3>Estos son los principales iconos de la app.</h3>
 
 ![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/resources/android/icon/drawable-hdpi-icon.png) <br>
 ![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/resources/android/splash/drawable-land-hdpi-screen.png)
