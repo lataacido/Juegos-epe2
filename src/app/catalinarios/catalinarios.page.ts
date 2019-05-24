@@ -18,12 +18,12 @@ export class CatalinariosPage implements OnInit {
   tabs(){
     this.navController.navigateForward('tabs')
   }
- 
+ kerrigan : string="kerrigan";
 
   async verSeleccion(){
     let alert = await this.alertCtrl.create({
       header: this.perso,
-      
+      message:"Personaje Principal de StarCraft",      
       buttons:['OK']
     });
     alert.present();
