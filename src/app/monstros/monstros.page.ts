@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import {NavController} from '@ionic/angular';
+import {AlertController} from '@ionic/angular';
+
 @Component({
   selector: 'app-monstros',
   templateUrl: './monstros.page.html',
@@ -7,9 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MonstrosPage implements OnInit {
 
-  constructor() { }
+  constructor(public navController : NavController,public alertCrtl : AlertController ) { }
 
   ngOnInit() {
   }
 
+
+  paginas(){
+    this.navController.navigateForward('paginas')
+  }
+  
+  tabs(){
+    this.navController.navigateForward('tabs')
+  }
+  
+  pagame(){
+    this.navController.navigateForward('pagame')
+  }
 }
