@@ -53,10 +53,18 @@ export class MonstrosPage implements OnInit {
     }else{
       
       let alert = await this.alertCrtl.create({
-        header: 'Nergigante - Monster Hunter World',
+        header: 'Comprar Monster Hunter: World Deluxe Edition PACK (?) ',
         subHeader : '¡Compra este pack para ahorrar un 6% en los 2 artículos!',
         message:'<ion-img src="/assets/compra2.png"></ion-img>',
-        buttons:['Cerrar']
+        buttons: [
+          {
+            text : 'Aceptar',
+            handler : (acepta) =>{console.log('Aceptó');}
+          },{
+            text : 'Cancelar',
+            handler : (cancelo) =>{console.log('No gracias');}
+          }
+        ]
       });
       alert.present();
     
@@ -71,10 +79,18 @@ export class MonstrosPage implements OnInit {
     }else{
       
       let alert = await this.alertCrtl.create({
-        header: 'Diablos - Monster Hunter World',
-        subHeader : 'El Diablos es un Wyvern Volador que domina zonas desérticas, fue introducido en Monster Hunter. ',
-        message:'<ion-img src="/assets/Diablos.jpg"></ion-img>',
-        buttons:['Cerrar']
+        header: 'Comprar Monster Hunter: World - Additional Gesture Bundle 2 PACK (?) ',
+        subHeader : '¡Compra este pack para ahorrar un 37% en los 4 artículos!',
+        message:'<ion-img src="/assets/compra3.png"></ion-img>',
+        buttons: [
+          {
+            text : 'Aceptar',
+            handler : (acepta) =>{console.log('Aceptó');}
+          },{
+            text : 'Cancelar',
+            handler : (cancelo) =>{console.log('No gracias');}
+          }
+        ]
       });
       alert.present();
     
@@ -88,10 +104,18 @@ export class MonstrosPage implements OnInit {
     }else{
       
       let alert = await this.alertCrtl.create({
-        header: 'Diablos - Monster Hunter World',
-        subHeader : 'El Diablos es un Wyvern Volador que domina zonas desérticas, fue introducido en Monster Hunter. ',
-        message:'<ion-img src="/assets/Diablos.jpg"></ion-img>',
-        buttons:['Cerrar']
+        header: 'Comprar Monster Hunter: World - Additional Sticker Set Bundle 1 PACK (?) ',
+        subHeader : '¡Compra este pack para ahorrar un 24% en los 2 artículos!',
+        message:'<ion-img src="/assets/compra4.png"></ion-img>',
+        buttons: [
+          {
+            text : 'Aceptar',
+            handler : (acepta) =>{console.log('Aceptó');}
+          },{
+            text : 'Cancelar',
+            handler : (cancelo) =>{console.log('No gracias');}
+          }
+        ]
       });
       alert.present();
     
