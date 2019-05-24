@@ -7,6 +7,7 @@ INIT GAME
 TEXTOS: 
 
 *parte del texto principal*
+
 Init games, una plataforma
 informativa de videojuegos, en ella podras
 informarte de los ultimos juegos y de las nuevas tendencias
@@ -26,3 +27,11 @@ splash.png
 IMAGENES:
 
 se encuentran alojados en el archvio assets y icon, hay amplia variedad de fotos
+
+
+El proyecto esta conformado por
+
+Catalina Rios
+Felipe Farias
+Esteban Terrones
+Edgard Henriquez
