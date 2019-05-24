@@ -16,7 +16,7 @@ export class FelipePage implements OnInit {
 
   async enviar_select() {
     const toast = await this.toastController.create({
-      header: 'GRACIAS!',
+      header: 'GRACIAS por suscribirte!',
       message: 'Pronto te estaremos enviado las últimas noticias',
       position: 'top',
       buttons: [
