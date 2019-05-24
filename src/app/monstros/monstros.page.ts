@@ -15,6 +15,113 @@ export class MonstrosPage implements OnInit {
   ngOnInit() {
   }
 
+  Comprar1 : boolean;
+  Comprar2 : boolean;
+  Comprar3 : boolean;
+  Comprar4 : boolean;
+
+  async verComprar1(){
+
+    if(this.Comprar1){
+
+    }else{
+      
+      let alert = await this.alertCrtl.create({
+        header: 'Comprar Monster Hunter: World',
+     
+        message:'Su precio de venta es de CLP$ 37.999',
+        buttons: [
+          {
+            text : 'Aceptar',
+            handler : (acepta) =>{console.log('Aceptó');}
+          },{
+            text : 'Cancelar',
+            handler : (cancelo) =>{console.log('No gracias');}
+          }
+        ]
+      });
+      alert.present();
+    
+    }
+
+  }
+  
+  async verComprar2(){
+
+    if(this.Comprar2){
+
+    }else{
+      
+      let alert = await this.alertCrtl.create({
+        header: 'Comprar Monster Hunter: World Deluxe Edition PACK (?) ',
+        subHeader : '¡Compra este pack para ahorrar un 6% en los 2 artículos!',
+        message:'<ion-img src="/assets/compra2.png"></ion-img>',
+        buttons: [
+          {
+            text : 'Aceptar',
+            handler : (acepta) =>{console.log('Aceptó');}
+          },{
+            text : 'Cancelar',
+            handler : (cancelo) =>{console.log('No gracias');}
+          }
+        ]
+      });
+      alert.present();
+    
+    }
+
+  }
+  
+  async verComprar3(){
+
+    if(this.Comprar3){
+
+    }else{
+      
+      let alert = await this.alertCrtl.create({
+        header: 'Comprar Monster Hunter: World - Additional Gesture Bundle 2 PACK (?) ',
+        subHeader : '¡Compra este pack para ahorrar un 37% en los 4 artículos!',
+        message:'<ion-img src="/assets/compra3.png"></ion-img>',
+        buttons: [
+          {
+            text : 'Aceptar',
+            handler : (acepta) =>{console.log('Aceptó');}
+          },{
+            text : 'Cancelar',
+            handler : (cancelo) =>{console.log('No gracias');}
+          }
+        ]
+      });
+      alert.present();
+    
+    }
+
+  }
+  async verComprar4(){
+
+    if(this.Comprar4){
+
+    }else{
+      
+      let alert = await this.alertCrtl.create({
+        header: 'Comprar Monster Hunter: World - Additional Sticker Set Bundle 1 PACK (?) ',
+        subHeader : '¡Compra este pack para ahorrar un 24% en los 2 artículos!',
+        message:'<ion-img src="/assets/compra4.png"></ion-img>',
+        buttons: [
+          {
+            text : 'Aceptar',
+            handler : (acepta) =>{console.log('Aceptó');}
+          },{
+            text : 'Cancelar',
+            handler : (cancelo) =>{console.log('No gracias');}
+          }
+        ]
+      });
+      alert.present();
+    
+    }
+
+  }
 
   paginas(){
     this.navController.navigateForward('paginas')

@@ -20,6 +20,34 @@
 
 <ion-content>
 
+    <ion-list>
+        <ion-list-header>
+          <ion-label>
+              MONSTER HUNTER: WORLD
+           
+          </ion-label>
+        </ion-list-header>
+        <ion-item>
+          <ion-label>Comprar Monster Hunter: World</ion-label>
+          <ion-checkbox slot="start"  [(ngModel)]="Comprar1" 
+          color="success" (click)="verComprar1()"></ion-checkbox >
+        </ion-item>
+        <ion-item>
+          <ion-label>Comprar Monster Hunter: World Deluxe Edition PACK (?)  </ion-label>
+          <ion-checkbox slot="start"  [(ngModel)]="Comprar2" 
+          color="success" (click)="verComprar2()"> </ion-checkbox >
+        </ion-item>
+        <ion-item>
+          <ion-label>Comprar Monster Hunter: World - Additional Gesture Bundle 2 PACK (?)  </ion-label>
+          <ion-checkbox slot="start"  [(ngModel)]="Comprar3" 
+          color="success" (click)="verComprar3()"> </ion-checkbox >
+        </ion-item>
+        <ion-item>
+            <ion-label>Comprar Monster Hunter: World - Additional Sticker Set Bundle 1 PACK (?)  </ion-label>
+            <ion-checkbox slot="start"  [(ngModel)]="Comprar4" 
+            color="success" (click)="verComprar4()"> </ion-checkbox >
+          </ion-item>
+      </ion-list>
 
   <ion-button expand="full" color=light (click)="paginas()" style="text-align: justify; font-weight: bold; font-size: 15px; color:green;">Volver</ion-button>
 
