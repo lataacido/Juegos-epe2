@@ -8,8 +8,8 @@ import { ToastController } from '@ionic/angular';
 })
 export class FelipePage implements OnInit {
 
-  constructor(public navController : NavController,
-              public toastController: ToastController ) {}
+  constructor(public navController: NavController,
+    public toastController: ToastController) { }
 
   ngOnInit() {
   }
@@ -23,7 +23,7 @@ export class FelipePage implements OnInit {
         {
           side: 'start',
           icon: 'logo-game-controller-b',
-         
+
           handler: () => {
             console.log('Favorite clicked');
           }
@@ -39,11 +39,11 @@ export class FelipePage implements OnInit {
     toast.present();
   }
 
-  paginas(){
+  paginas() {
     this.navController.navigateForward('paginas')
   }
 
-  tabs(){
+  tabs() {
     this.navController.navigateForward('tabs')
   }
 }

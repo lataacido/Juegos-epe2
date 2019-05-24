@@ -1,19 +1,19 @@
 <ion-header>
-    <ion-toolbar style="color:rgb(0, 0, 0);">
-        <ion-buttons slot="start">
-          <ion-button (click)="paginas()">
-            <ion-icon slot="icon-only" name="bug" style="color:rgb(88, 4, 4)"></ion-icon>
-          </ion-button>
-          <ion-button (click)="pagame()">
-            <ion-icon slot="icon-only" name="card" style="color:rgb(88, 4, 4)"></ion-icon>
-          </ion-button>
-          <ion-button (click)="tabs()">
-              <ion-icon slot="icon-only" name="home" style="color:rgb(88, 4, 4)"></ion-icon>
-            </ion-button>
-        </ion-buttons>
-        <ion-title>Init Game</ion-title>
-       
-      </ion-toolbar>
+  <ion-toolbar style="color:rgb(0, 0, 0);">
+    <ion-buttons slot="start">
+      <ion-button (click)="paginas()">
+        <ion-icon slot="icon-only" name="bug" style="color:rgb(88, 4, 4)"></ion-icon>
+      </ion-button>
+      <ion-button (click)="pagame()">
+        <ion-icon slot="icon-only" name="card" style="color:rgb(88, 4, 4)"></ion-icon>
+      </ion-button>
+      <ion-button (click)="tabs()">
+        <ion-icon slot="icon-only" name="home" style="color:rgb(88, 4, 4)"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Init Game</ion-title>
+
+  </ion-toolbar>
   <ion-toolbar>
     <ion-title>Resident Evil</ion-title>
   </ion-toolbar>
@@ -28,14 +28,21 @@
         <ion-card-title>Biohazard</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        Biohazard (バイオハザード Baiohazādo?, 'riesgo biológico') —nombre con que se conoce en Japón—, rebautizado en Estados Unidos y Europa como Resident Evil (“el mal que reside”) es una serie de videojuegos y una franquicia de medios, entre los que se incluyen Manga, novelas, películas y coleccionables como figuras de acción, guías de estrategia y otras publicaciones.1​ Desarrollados por Capcom y creados por Shinji Mikami la mayoría, al año 2014, se han vendido 61 millones de copias de los videojuegos en todo el mundo. Así como en la saga principal de videojuegos, como en otros medios, la trama gira en torno al mismo conflicto: la amenaza bioterrorista. Un peligroso virus se ha propagado por error o intencionalmente por la Corporación Umbrella, este al infectar a los humanos, los transforma en seres amorfos y monstruos.
+        Biohazard (バイオハザード Baiohazādo?, 'riesgo biológico') —nombre con que se conoce en Japón—, rebautizado en Estados
+        Unidos y Europa como Resident Evil (“el mal que reside”) es una serie de videojuegos y una franquicia de medios,
+        entre los que se incluyen Manga, novelas, películas y coleccionables como figuras de acción, guías de estrategia
+        y otras publicaciones.1​ Desarrollados por Capcom y creados por Shinji Mikami la mayoría, al año 2014, se han
+        vendido 61 millones de copias de los videojuegos en todo el mundo. Así como en la saga principal de videojuegos,
+        como en otros medios, la trama gira en torno al mismo conflicto: la amenaza bioterrorista. Un peligroso virus se
+        ha propagado por error o intencionalmente por la Corporación Umbrella, este al infectar a los humanos, los
+        transforma en seres amorfos y monstruos.
       </ion-card-content>
     </ion-card>
     <ion-item>
       <ion-text color="tertiary">
         <h3>
           Te enviaremos noticias y avances
-          de tus sagas favoritas, seleccionalas 
+          de tus sagas favoritas, seleccionalas
           e ingresa tu correo @.</h3>
       </ion-text>
     </ion-item>
@@ -48,13 +55,13 @@
       <ion-checkbox color="dark"></ion-checkbox>
     </ion-item>
     <ion-item>
-        <ion-label>Resident Evil 3 Nemesis Remake</ion-label>
-        <ion-checkbox color="dark"></ion-checkbox>
-      </ion-item>
+      <ion-label>Resident Evil 3 Nemesis Remake</ion-label>
+      <ion-checkbox color="dark"></ion-checkbox>
+    </ion-item>
     <ion-item>
-        <ion-label>Resident Evil 0 Remake</ion-label>
-        <ion-checkbox color="dark"></ion-checkbox>
-      </ion-item>
+      <ion-label>Resident Evil 0 Remake</ion-label>
+      <ion-checkbox color="dark"></ion-checkbox>
+    </ion-item>
     <ion-item>
       <ion-label>Resident Evil 4 HD</ion-label>
       <ion-checkbox color="dark"></ion-checkbox>
@@ -72,9 +79,11 @@
       <ion-item>
         <ion-label position="stacked">Ingresa tu Email</ion-label>
         <ion-input type="email" required placeholder="miemail@gmail.com"></ion-input>
-        <ion-button type="submit" expand="full" color=success (click)="enviar_select()"style="text-align: justify; font-weight: bold; font-size: 15px; color:green;">Suscribir</ion-button>
+        <ion-button type="submit" expand="full" color=success (click)="enviar_select()"
+          style="text-align: justify; font-weight: bold; font-size: 15px; color:green;">Suscribir</ion-button>
       </ion-item>
     </form>
   </ion-grid>
-  <ion-button expand="full" color=primary (click)="paginas()"style="text-align: justify; font-weight: bold; font-size: 15px; color:green;">Volver</ion-button>
+  <ion-button expand="full" color=primary (click)="paginas()"
+    style="text-align: justify; font-weight: bold; font-size: 15px; color:green;">Volver</ion-button>
 </ion-content>
