@@ -21,6 +21,9 @@ export class CatalinariosPage implements OnInit {
  kerrigan : string="kerrigan";
 //muestra un mensaje de alerta indicando que es parte de los personajes principales.
   async verSeleccion(){
+    if(this.boton){
+
+    }else{
     let alert = await this.alertCtrl.create({
       header: this.perso,
       message:"Personaje Principal de StarCraft",      
@@ -28,6 +31,5 @@ export class CatalinariosPage implements OnInit {
     });
     alert.present();
   }
-
-  
+    }
   }
