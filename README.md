@@ -1,5 +1,3 @@
-<h1>JUEGOS-EPE2</h1>
-
 <h1>TITULO: INIT GAME</h1>
 
 <h1>TEXTOS:</h1> 
