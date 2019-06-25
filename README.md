@@ -8,7 +8,7 @@ gestionar tus videojuegos y saber sobre las nuevas tendencias
 <br>
 <h1>ICONOS</h1>
 
-<h3>Iconos principal de la app</h3>
+<h3>Icono principal de la app</h3>
   
 ![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/resources/android/icon/drawable-hdpi-icon.png) <br>
 
