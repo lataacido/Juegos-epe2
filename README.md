@@ -1,10 +1,11 @@
-<h1>TITULO: INIT GAME</h1>
+<h1>INIT GAME</h1>
 
 <h1>TEXTOS:</h1> 
 <p>Init games, una plataforma
 informativa de videojuegos, en ella podras
 informarte de los ultimos juegos y de las nuevas tendencias
 </p>
+<br>
 <h1>ICONOS:</h1>
 
 <h3>Estos son los principales iconos de la app.</h3>
