@@ -1,12 +1,12 @@
 <h1>INIT GAME</h1>
 
-<h1>TEXTOS:</h1> 
+<h1>DESCRIPCION</h1> 
 <p>Init games, una plataforma
 informativa de videojuegos, en ella podras
 informarte de los ultimos juegos y de las nuevas tendencias
 </p>
 <br>
-<h1>ICONOS:</h1>
+<h1>ICONOS</h1>
 
 <h3>Estos son los principales iconos de la app.</h3>
 
@@ -19,15 +19,15 @@ informarte de los ultimos juegos y de las nuevas tendencias
 ![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/resources/android/splash/drawable-land-hdpi-screen.png)
 
 
-<h1>IMAGENES:</h1>
+<h1>IMAGENES</h1>
 
 ![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/fondoSC.jpg)<br>
 ![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/samus.png)<br>
 ![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/resident.jpg)<br>
 ![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/zerosuit.jpg)<br>
 
-<h4>El proyecto esta conformado por
-
+<h4>El proyecto esta conformado por:
+<br>
 Catalina Rios<br>
 Felipe Farias<br>
 Esteban Terrones<br>
