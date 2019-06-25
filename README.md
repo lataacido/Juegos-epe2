@@ -3,7 +3,7 @@
 <h1>DESCRIPCION</h1> 
 <p>Init games, una plataforma
 informativa de videojuegos, en ella podras
-informarte de los ultimos juegos y de las nuevas tendencias
+gestionar tus videojuegos y saber sobre las nuevas tendencias
 </p>
 <br>
 <h1>ICONOS</h1>
