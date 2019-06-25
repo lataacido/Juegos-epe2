@@ -29,6 +29,6 @@ informarte de los ultimos juegos y de las nuevas tendencias
 <h4>El proyecto esta conformado por:
 <br>
 Catalina Rios<br>
-Felipe Farias<br>
+Harold Rivers<br>
 Esteban Terrones<br>
 Edgard Henriquez</h4>
