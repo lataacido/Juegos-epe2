@@ -26,6 +26,6 @@ agregar nuevo icono <br>
 <h4>El proyecto esta conformado por:
 <br>
 Catalina Rios<br>
-Harold Rivers<br>
+Harolds Rivers<br>
 Esteban Terrones<br>
 Edgard Henriquez</h4>
