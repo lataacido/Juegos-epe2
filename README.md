@@ -10,7 +10,7 @@ gestionar tus videojuegos y saber sobre las nuevas tendencias
 
 <h3>Icono principal de la app</h3>
   
-![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/resources/android/icon/drawable-hdpi-icon.png) <br>
+agregar nuevo icono <br>
 
 <h3>Splash screen</h3>
 
@@ -21,7 +21,6 @@ gestionar tus videojuegos y saber sobre las nuevas tendencias
 
 ![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/fondoSC.jpg)<br>
 ![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/samus.png)<br>
-![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/resident.jpg)<br>
 ![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/zerosuit.jpg)<br>
 
 <h4>El proyecto esta conformado por:
