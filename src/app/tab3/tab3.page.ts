@@ -7,7 +7,7 @@ import {NavController} from '@ionic/angular';
 })
 export class Tab3Page {
   constructor(public navController : NavController ){}
-
+//metodos para navegar entre paginas
   paginas(){
     this.navController.navigateForward('paginas')
   }

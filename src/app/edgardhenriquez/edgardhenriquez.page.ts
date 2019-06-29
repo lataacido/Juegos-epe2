@@ -7,11 +7,11 @@ import { ActionSheetController } from '@ionic/angular';
   styleUrls: ['./edgardhenriquez.page.scss'],
 })
 export class EdgardhenriquezPage implements OnInit {
-
- 
+  //aqui le damos parametros al constructor, los paremtros se importan y luego se usan.
   constructor(public navController : NavController, public actionSheetController: ActionSheetController ) { }
   ngOnInit() {
   }
+  //con estos metodos navegamos entre paginas con el toolbar
   paginas(){
     this.navController.navigateForward('paginas')
   }
@@ -20,43 +20,41 @@ export class EdgardhenriquezPage implements OnInit {
     this.navController.navigateForward('tabs')
   }
 
-  async presentActionSheet() {
+//con este metodo asincrono se crea al actionsheet o hoja de accion
+  async ACTIONSHEET() {
     const actionSheet = await this.actionSheetController.create({
-      header: 'Albums',
+      //de aqui en adelante el actionsheet se forma y se le dan opciones.
+      header: 'Sobre que quieres saber mas',
       buttons: [{
-        text: 'Delete',
-        role: 'destructive',
-        icon: 'trash',
+        text: 'Samus',
+        icon: 'eye',
         handler: () => {
-          console.log('Delete clicked');
+          this.navController.navigateForward('samus')
         }
-      }, {
-        text: 'Share',
-        icon: 'share',
+      },{
+        text: 'Metroids',
+        icon: 'eye',
         handler: () => {
-          console.log('Share clicked');
+          this.navController.navigateForward('metroid')
         }
-      }, {
-        text: 'Play (open modal)',
-        icon: 'arrow-dropright-circle',
+      },{
+        text: 'Federacion Galactica',
+        icon: 'eye',
         handler: () => {
-          console.log('Play clicked');
+          this.navController.navigateForward('federacion')
         }
-      }, {
-        text: 'Favorite',
-        icon: 'heart',
+      }, {text: 'Titulos',
+        icon: 'eye',
         handler: () => {
-          console.log('Favorite clicked');
-        }
-      }, {
+        this.navController.navigateForward('titulos')
+      }
+      },{
         text: 'Cancel',
         icon: 'close',
-        role: 'cancel',
-        handler: () => {
-          console.log('Cancel clicked');
-        }
+        role: 'cancel'
       }]
     });
+    //para que el actionsheet se mantenga en espera
     await actionSheet.present();
   }
 }

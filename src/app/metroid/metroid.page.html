@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar style="color:rgb(0, 0, 0);">
+    <ion-buttons slot="start">
+      <ion-button (click)="paginas()">
+        <ion-icon slot="icon-only" name="bug" style="color:rgb(88, 4, 4)"></ion-icon>
+      </ion-button>
+      <ion-button (click)="pagame()">
+        <ion-icon slot="icon-only" name="card" style="color:rgb(88, 4, 4)"></ion-icon>
+      </ion-button>
+      <ion-button (click)="tabs()">
+        <ion-icon slot="icon-only" name="home" style="color:rgb(88, 4, 4)"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Init Game</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title>Metroids</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card style="background: rgb(0, 0, 0)">
+      <ion-card-title style="font-weight: bold; font-size: 30px; color: white;">Sobre los Metroids</ion-card-title>
+      <p style="font-weight: bold; font-size: 12x; color: white; text-align: justify;">
+        Los Metroid o metroides son una especie de criaturas parasitarias creadas por los Chozo con el objetivo de servir 
+        como herramienta contra un tipo de organismo parasitario nativo del planeta SR388, el Parásito X. Los Metroid son 
+        una especie depredadora con la capacidad de absorber la energía vital de sus presas, aferrándose a ellas mediante 
+        sus poderosas mandíbulas. Así mismo, los Metroid tienen una alta capacidad adaptativa y poseen un ciclo vital 
+        evolutivo que les permite aumentar en fuerza y tamaño. Desde su descubrimiento, han significado un punto de interés 
+        tanto para los Piratas Espaciales como para la Federación Galáctica.</p>
+    </ion-card>
+    
+    <ion-card>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-img src="/assets/_Metroide.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+      
+  <ion-button expand="full" color=light (click)="edgardhenriquez()"
+    style="text-align: justify; font-weight: bold; font-size: 15px; color:green;">Volver</ion-button>
+</ion-content>

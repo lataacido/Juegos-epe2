@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar style="color:rgb(0, 0, 0);">
+    <ion-buttons slot="start">
+      <ion-button (click)="paginas()">
+        <ion-icon slot="icon-only" name="bug" style="color:rgb(88, 4, 4)"></ion-icon>
+      </ion-button>
+      <ion-button (click)="pagame()">
+        <ion-icon slot="icon-only" name="card" style="color:rgb(88, 4, 4)"></ion-icon>
+      </ion-button>
+      <ion-button (click)="tabs()">
+        <ion-icon slot="icon-only" name="home" style="color:rgb(88, 4, 4)"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Init Game</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-title>Federacion Galactica</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card style="background: rgb(0, 0, 0)">
+      <ion-card-title style="font-weight: bold; font-size: 30px; color: white;">Federacion Galactica</ion-card-title>
+      <p style="font-weight: bold; font-size: 12x; color: white; text-align: justify;">
+        Se formó en el año 2003 del Calendario Cósmico, cuando los representantes y delegados de muchos mundos civilizados 
+        se reunieron y establecieron el congreso intergaláctico conocido como Federación Galáctica, formada por valientes 
+        caballeros de muchas especies inteligentes como se puede ver en el manga, debido a que en los videojuegos sólo se ven 
+        humanos en la Federación. <br>
+          Sin embargo, los Piratas Espaciales (gobernados por el Mando) aparecieron y se convirtieron en los enemigos 
+          jurados de la Federación, asaltando muchas de sus naves y planetas, y casi siempre matando a toda la población 
+          civil. Para combatir esta nueva amenaza, la Oficina Federal fundó la Policía Federal, una fuerza de élite que 
+          hizo valientes esfuerzos contra los piratas; también con un muy bien capacitado equipo de científicos que desarrollan
+           diferentes tecnologías e investigaciones para ella.</p>
+    </ion-card> 
+  <ion-card>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-img src="/assets/Insignia_federal_presente.png"></ion-img>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    <ion-card>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <ion-img src="/assets/GFtrooper_trio.png"></ion-img>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+  <ion-button expand="full" color=light (click)="edgardhenriquez()"
+    style="text-align: justify; font-weight: bold; font-size: 15px; color:green;">Volver</ion-button>
+</ion-content>

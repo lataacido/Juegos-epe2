@@ -1,21 +1,31 @@
-# Juegos EPE2
+<h1>INIT GAME</h1>
 
-TITULO: 
-
-INIT GAME
-
-TEXTOS: 
-
-Init games, una plataforma
+<h1>DESCRIPCION</h1> 
+<p>Init games, una plataforma
 informativa de videojuegos, en ella podras
-informarte de los ultimos juegos y de las nuevas tendencias
+gestionar tus videojuegos y saber sobre las nuevas tendencias
+</p>
+<br>
+<h1>ICONOS</h1>
 
-ICONOS:
+<h3>Icono principal de la app</h3>
+  
+agregar nuevo icono <br>
 
-arcade1.png
-control.png
-control.png
+<h3>Splash screen</h3>
 
-IMAGENES:
+![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/resources/android/splash/drawable-land-hdpi-screen.png)
 
-control.png
+
+<h1>IMAGENES</h1>
+
+![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/fondoSC.jpg)<br>
+![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/samus.png)<br>
+![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/zerosuit.jpg)<br>
+
+<h4>El proyecto esta conformado por:
+<br>
+Catalina Rios<br>
+Harolds Rivers<br>
+Esteban Terrones<br>
+Edgard Henriquez</h4>

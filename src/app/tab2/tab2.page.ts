@@ -21,7 +21,7 @@ export class Tab2Page {
   tabs(){
     this.navController.navigateForward('tabs')
   }
-
+//controlador para alert
   async presentAlert() {
     const alert = await this.alertController.create({
       header: 'Muchas gracias',

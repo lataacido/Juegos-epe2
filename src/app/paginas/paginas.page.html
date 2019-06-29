@@ -1,4 +1,5 @@
 <ion-header>
+  <!-- toolbar -->
     <ion-toolbar style="color:rgb(0, 0, 0);">
         <ion-buttons slot="start">
           <ion-button (click)="paginas()">
@@ -19,10 +20,12 @@
 </ion-header>
 
 <ion-content>
+  <!-- Contenido de la pagina de seleccion, cada boton te lleva a una pagina con informacion de los juegos en lista -->
     <ion-button expand="full"  color=dark (click)="esteban()" style="text-align: justify; font-weight: bold; font-size: 15px;  ">Monster Hunter</ion-button>
     <ion-button expand="full"  color=dark (click)="catalina()" style="text-align: justify; font-weight: bold; font-size: 15px; ">Starcraft</ion-button>
     <ion-button expand="full" color=dark (click)="edgard()" style="text-align: justify; font-weight: bold; font-size: 15px; ">Metroid</ion-button>
-    <ion-button expand="full" color=dark (click)="felipe()" style="text-align: justify; font-weight: bold; font-size: 15px; ">Felipe</ion-button>
+    <ion-button expand="full" color=dark (click)="felipe()" style="text-align: justify; font-weight: bold; font-size: 15px; ">Resident Evil</ion-button>
 <br>
+<!-- volver -->
   <ion-button expand="full" color=light (click)="tabs()"style="text-align: justify; font-weight: bold; font-size: 15px; color:green;">Volver</ion-button>
 </ion-content>
