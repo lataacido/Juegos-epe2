@@ -3,161 +3,77 @@ import { Component, OnInit } from '@angular/core';
 import {NavController} from '@ionic/angular';
 import {AlertController,ToastController} from '@ionic/angular';
 
+import { CrudService } from '../conexfirebase/conexfirebase.page';
+
 @Component({
   selector: 'app-monstros',
   templateUrl: './monstros.page.html',
   styleUrls: ['./monstros.page.scss'],
 })
 export class MonstrosPage implements OnInit {
+  
+  students: any;
+  studentName: string;
+  studentAge: number;
+  studentAddress: string;
 
-  constructor(public navController : NavController,public alertCrtl : AlertController ,public toastController: ToastController ) { }
 
+  constructor(private crudService: CrudService, public navController : NavController, public alertCrtl : AlertController) { }
+
+  
   ngOnInit() {
+    this.crudService.read_Students().subscribe(data => {
+
+      this.students = data.map(e => {
+        return {
+          id: e.payload.doc.id,
+          isEdit: false,
+          Name: e.payload.doc.data()['Name'],
+          Age: e.payload.doc.data()['Age'],
+          Address: e.payload.doc.data()['Address'],
+        };
+      })
+      console.log(this.students);
+
+    });
   }
 
-  Comprar1 : boolean;
-  Comprar2 : boolean;
-  Comprar3 : boolean;
-  Comprar4 : boolean;
-  verResul1 : any;
-  verResul2 : any;
-  verResul3 : any;
-  verResul4 : any;
-
-  async verComprar1(){
-
-    if(this.Comprar1){
-
-    }else{
-      
-      const toast = await this.toastController.create({
-        header: 'Compraste Monster Hunter: World',
-     
-        message:'Su precio de venta es de CLP$ 37.999',
-        position: 'top',
-        buttons: [
-          {
-            side: 'start',
-            icon: 'logo-game-controller-b',
-           
-            handler: () => {
-              console.log('Favorite clicked');
-            }
-          }, {
-            text: 'OK',
-            role: 'cancel',
-            handler: () => {
-              console.log('Cancel clicked');
-            }
-          }
-        ]
+  CreateRecord() {
+    let record = {};
+    record['Name'] = this.studentName;
+    record['Age'] = this.studentAge;
+    record['Address'] = this.studentAddress;
+    this.crudService.create_NewStudent(record).then(resp => {
+      this.studentName = "";
+      this.studentAge = undefined;
+      this.studentAddress = "";
+      console.log(resp);
+    })
+      .catch(error => {
+        console.log(error);
       });
-      toast.present();
-    
-    }
-
-  }
-  
-  async verComprar2(){
-
-    if(this.Comprar2){
-
-    }else{
-      
-      const toast = await this.toastController.create({
-        header: 'Compraste Monster Hunter: World Deluxe Edition PACK (?) ',
-        message:'¡Compra este pack para ahorrar un 6% en los 2 artículos!  -6% Tu precio: CLP$ 44.573',
-        position: 'top',
-        buttons: [
-          {
-            side: 'start',
-            icon: 'logo-game-controller-b',
-           
-            handler: () => {
-              console.log('Favorite clicked');
-            }
-          }, {
-            text: 'OK',
-            role: 'cancel',
-            handler: () => {
-              console.log('Cancel clicked');
-            }
-          }
-        ]
-      });
-      toast.present();
-    
-    }
-
-  }
-  
-  async verComprar3(){
-
-    if(this.Comprar3){
-
-    }else{
-      
-      const toast = await this.toastController.create({
-        header: 'Compraste Monster Hunter: World - Additional Gesture Bundle 2 PACK (?)',
-        message:' ¡Compra este pack para ahorrar un 37% en los 4 artículos! -37% Tu precio: CLP$ 3.272',
-        position: 'top',
-        buttons: [
-          {
-            side: 'start',
-            icon: 'logo-game-controller-b',
-           
-            handler: () => {
-              console.log('Favorite clicked');
-            }
-          }, {
-            text: 'OK',
-            role: 'cancel',
-            handler: () => {
-              console.log('Cancel clicked');
-            }
-          }
-        ]
-      });
-      toast.present();
-    
-    }
-
   }
 
-  async verComprar4(){
-
-    if(this.Comprar4){
-
-    }else{
-      
-      const toast = await this.toastController.create({
-        header: 'Compraste Monster Hunter: World - Additional Sticker Set Bundle 1 PACK (?) ',
-        message:'¡Compra este pack para ahorrar un 24% en los 2 artículos!  -24% Tu precio:  CLP$ 1.974 ',
- position: 'top',
- 
-        buttons: [
-          {
-            side: 'start',
-            icon: 'logo-game-controller-b',
-            
-           
-            handler: () => {
-              console.log('Favorite clicked');
-            }
-          }, {
-            text: 'OK',
-            role: 'cancel',
-            handler: () => {
-              console.log('Cancel clicked');
-            }
-          }
-        ]
-      });
-      toast.present();
-    
-    }
-
+  RemoveRecord(rowID) {
+    this.crudService.delete_Student(rowID);
   }
+
+  EditRecord(record) {
+    record.isEdit = true;
+    record.EditName = record.Name;
+    record.EditAge = record.Age;
+    record.EditAddress = record.Address;
+  }
+
+  UpdateRecord(recordRow) {
+    let record = {};
+    record['Name'] = recordRow.EditName;
+    record['Age'] = recordRow.EditAge;
+    record['Address'] = recordRow.EditAddress;
+    this.crudService.update_Student(recordRow.id, record);
+    recordRow.isEdit = false;
+  }
+
   paginas(){
     this.navController.navigateForward('paginas')
   }

@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: 'federacion', loadChildren: './federacion/federacion.module#FederacionPageModule' },
   { path: 'samus', loadChildren: './samus/samus.module#SamusPageModule' },
   { path: 'titulos', loadChildren: './titulos/titulos.module#TitulosPageModule' },
-  { path: 'monstros', loadChildren: './monstros/monstros.module#MonstrosPageModule' }
+  { path: 'monstros', loadChildren: './monstros/monstros.module#MonstrosPageModule' },
+  { path: 'conexfirebase', loadChildren: './conexfirebase/conexfirebase.module#ConexfirebasePageModule' }
 
 ];
 @NgModule({

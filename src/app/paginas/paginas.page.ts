@@ -23,7 +23,7 @@ export class PaginasPage implements OnInit {
   }
 
   esteban(){
-    this.navController.navigateForward('estebanterrones')
+    this.navController.navigateForward('monstros')
   }
 
   catalina(){
