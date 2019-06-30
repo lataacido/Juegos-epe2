@@ -24,6 +24,11 @@ peleas1:boolean;
   pagame(){
     this.navController.navigateForward('pagame')
   }
+
+  login(){
+    this.navController.navigateForward('login')
+  }
+ 
   
   //controladores para mostrar toast
   async accion() {

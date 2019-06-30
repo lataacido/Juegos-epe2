@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },  { path: 'catalinarios', loadChildren: './catalinarios/catalinarios.module#CatalinariosPageModule' },
+   //{ path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
+  { path: 'catalinarios', loadChildren: './catalinarios/catalinarios.module#CatalinariosPageModule' },
   { path: 'estebanterrones', loadChildren: './estebanterrones/estebanterrones.module#EstebanterronesPageModule' },
   { path: 'felipe', loadChildren: './felipe/felipe.module#FelipePageModule' },
   { path: 'edgardhenriquez', loadChildren: './edgardhenriquez/edgardhenriquez.module#EdgardhenriquezPageModule' },
@@ -13,7 +15,10 @@ const routes: Routes = [
   { path: 'samus', loadChildren: './samus/samus.module#SamusPageModule' },
   { path: 'titulos', loadChildren: './titulos/titulos.module#TitulosPageModule' },
   { path: 'monstros', loadChildren: './monstros/monstros.module#MonstrosPageModule' },
-  { path: 'conexfirebase', loadChildren: './conexfirebase/conexfirebase.module#ConexfirebasePageModule' }
+  { path: 'conexfirebase', loadChildren: './conexfirebase/conexfirebase.module#ConexfirebasePageModule' },
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
+  { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
+  { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardPageModule' }
 
 ];
 @NgModule({

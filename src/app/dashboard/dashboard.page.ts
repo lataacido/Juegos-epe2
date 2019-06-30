@@ -1,27 +1,41 @@
 import { Component, OnInit } from '@angular/core';
-
-import {NavController} from '@ionic/angular';
 import {AlertController} from '@ionic/angular';
+import { NavController } from '@ionic/angular';
+import { AuthenticateService } from '../services/authentication.service';
 
 import { CrudService } from '../conexfirebase/conexfirebase.page';
 
 @Component({
-  selector: 'app-monstros',
-  templateUrl: './monstros.page.html',
-  styleUrls: ['./monstros.page.scss'],
+  selector: 'app-dashboard',
+  templateUrl: './dashboard.page.html',
+  styleUrls: ['./dashboard.page.scss'],
 })
-export class MonstrosPage implements OnInit {
-  
+export class DashboardPage implements OnInit {
+ 
+ 
   students: any;
   studentName: string;
   studentAge: number;
   studentAddress: string;
-
-
-  constructor(private crudService: CrudService, public navController : NavController, public alertCrtl : AlertController) { }
-
-  
-  ngOnInit() {
+  userEmail: string;
+ 
+  constructor(
+    private navCtrl: NavController,
+    private authService: AuthenticateService,
+    private crudService: CrudService,
+     public navController : NavController,
+      public alertCrtl : AlertController
+  ) {}
+ 
+  ngOnInit(){
+    
+    
+    if(this.authService.userDetails()){
+      this.userEmail = this.authService.userDetails().email;
+    }else{
+      this.navCtrl.navigateBack('');
+    }
+    
     this.crudService.read_Students().subscribe(data => {
 
       this.students = data.map(e => {
@@ -37,7 +51,19 @@ export class MonstrosPage implements OnInit {
 
     });
   }
+ 
+  logout(){
+    this.authService.logoutUser()
+    .then(res => {
+      console.log(res);
+      this.navCtrl.navigateBack('');
+    })
+    .catch(error => {
+      console.log(error);
+    })
+  }
 
+  
   CreateRecord() {
     let record = {};
     record['Name'] = this.studentName;
@@ -72,18 +98,6 @@ export class MonstrosPage implements OnInit {
     record['Address'] = recordRow.EditAddress;
     this.crudService.update_Student(recordRow.id, record);
     recordRow.isEdit = false;
-  }
-
-  paginas(){
-    this.navController.navigateForward('paginas')
-  }
-  
-  tabs(){
-    this.navController.navigateForward('tabs')
-  }
-  
-  pagame(){
-    this.navController.navigateForward('pagame')
   }
 
 }

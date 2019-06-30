@@ -10,6 +10,7 @@
           <ion-button (click)="tabs()">
               <ion-icon slot="icon-only" name="home" style="color:rgb(88, 4, 4)"></ion-icon>
             </ion-button>
+            
         </ion-buttons>
         <ion-title>Init Game</ion-title>
       </ion-toolbar>
@@ -20,52 +21,13 @@
 
 <ion-content padding>
 
-  <ion-grid fixed>
-    <ion-row>
-      <ion-col>
-        <ion-item>
-          <ion-input placeholder="Enter Name" [(ngModel)]="studentName"></ion-input>
-        </ion-item>
-      </ion-col>
-      <ion-col>
-        <ion-item>
-          <ion-input placeholder="Enter Age" [(ngModel)]="studentAge"></ion-input>
-        </ion-item>
-      </ion-col>
-      <ion-col>
-        <ion-item>
-          <ion-input placeholder="Enter Address" [(ngModel)]="studentAddress"></ion-input>
-        </ion-item>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col text-center>
-        <ion-button (click)="CreateRecord()" [disabled]="!studentName || !studentAge || !studentAddress">
-          <ion-icon size="small" slot="icon-only" name="add"></ion-icon>
-          &nbsp;Create Record
-        </ion-button>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-
   <ion-card *ngFor="let item of students">
     <span *ngIf="!item.isEdit; else elseBlock">
       <ion-card-header>
         <ion-card-title>{{item.Name}} of {{item.Age}} years</ion-card-title>
         <ion-card-subtitle>From: {{item.Address}}</ion-card-subtitle>
       </ion-card-header>
-      <ion-card-content>
 
-        <ion-button shape="round" color="secondary" size="small" (click)="EditRecord(item)">
-          <ion-icon size="small" slot="icon-only" name="create"></ion-icon>
-
-        </ion-button>
-        <ion-button shape="round" color="danger" size="small" (click)="RemoveRecord(item.id)">
-          <ion-icon size="small" slot="icon-only" name="trash"></ion-icon>
-
-        </ion-button>
-      </ion-card-content>
     </span>
     <ng-template #elseBlock>
       <ion-card-header>
