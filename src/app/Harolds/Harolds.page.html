@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar style="color:rgb(1, 50, 50);">
+    <ion-buttons slot="start">
+      <ion-button (click)="paginas()">
+        <ion-icon slot="icon-only" name="bug" style="color:rgb(99, 94, 4)"></ion-icon>
+      </ion-button>
+      <ion-button (click)="pagame()">
+        <ion-icon slot="icon-only" name="card" style="color:rgb(88, 94, 4)"></ion-icon>
+      </ion-button>
+      <ion-button (click)="tabs()">
+        <ion-icon slot="icon-only" name="home" style="color:rgb(88, 94, 4)"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Init Game</ion-title>
+
+  </ion-toolbar>
+ </ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-card>
+      
+      <ion-img width="100%" src="assets/logoREFO.png"></ion-img>
+      <ion-card-header>
+        <ion-card-title >CAMPAÑA LEGENDARIA</ion-card-title>
+        <ion-card-subtitle center style="color:rgb(218, 217, 204)">LOS ORÍGENES DE WARCRAFT</ion-card-subtitle>
+        
+       
+      </ion-card-header>
+     
+        <iframe width="260" height="215" src="https://www.youtube.com/embed/5JCkbCsT0wU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      
+      <ion-card-content style="color:rgb(218, 217, 204)">
+
+       
+
+
+  Revive los eventos de Warcraft III: Reign of Chaos y The Frozen Throne. 
+Lidera a los misteriosos elfos de la noche, los insidiosos no-muertos,
+los salvajes orcos y los nobles humanos entre alianzas que cambian y
+culturas que chocan en un conflicto despiadado.
+
+  62 misiones en Kalimdor, Lordaeron, Rasganorte y más allá
+Controla a más de 20 héroes y antagonistas legendarios de la historia de Warcraft: 
+gana experiencia, sube de nivel, domina poderosas facultades y 
+mejora unidades cercanas.
+      </ion-card-content>
+    </ion-card>
+   
+   
+    
+    <form>
+
+
+      <ion-button expand="full" color=#3171e0 (click)="alianza()"
+      style="text-align: justify; font-weight: bold; font-size: 15px; color:#fff;">Humanos
+      </ion-button>
+
+      <ion-button expand="full" color=alert  (click)="horda()"
+      style="text-align: justify; font-weight: bold; font-size: 15px; color:#fff;">Orcos
+      </ion-button>
+
+      <ion-button expand="full" color=#28e070 (click)="azote()"
+      style="text-align: justify; font-weight: bold; font-size: 15px; color:#fff;">No Muertos
+      </ion-button>
+
+      <ion-button expand="full" color=#633ce0 (click)="nnelf()"
+      style="text-align: justify; font-weight: bold; font-size: 15px; color:#fff;">Elfos De La Noche
+      </ion-button>
+    </form>
+  </ion-grid>
+  <ion-button expand="full" color=#a2a4ab (click)="paginas()"
+    style="text-align: justify; font-weight: bold; font-size: 15px; color:green;">Volver</ion-button>
+</ion-content>

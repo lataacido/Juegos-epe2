@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-button (click)="paginas()">
+            <ion-icon slot="icon-only" name="bug" style="color:rgb(99, 94, 4)"></ion-icon>
+          </ion-button>
+          <ion-button (click)="pagame()">
+            <ion-icon slot="icon-only" name="card" style="color:rgb(88, 94, 4)"></ion-icon>
+          </ion-button>
+          <ion-button (click)="tabs()">
+            <ion-icon slot="icon-only" name="home" style="color:rgb(88, 94, 4)"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+    <ion-title>Humanos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-grid>
+        <ion-card>
+          
+          <ion-img width="100%" src="assets/ALIANZA.png"></ion-img>
+        
+        <ion-card-content style="color:rgb(218, 217, 204)">
+
+  La Alianza es un conglomerado de humanos, elfos y enanos. 
+  Se trata de una facción versátil que cuenta con poderosas 
+  tropas terrestres y aéreas, una capacidad de asedio temible
+  y poderosos taumaturgos.
+</ion-card>
+    </ion-grid>
+
+  <ion-button expand="full" color=#a2a4ab (click)="Harolds()"
+    style="text-align: justify; font-weight: bold; font-size: 15px; color:green;">Volver</ion-button>
+</ion-content>
