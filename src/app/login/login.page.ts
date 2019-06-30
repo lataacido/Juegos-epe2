@@ -60,10 +60,7 @@ export class LoginPage implements OnInit {
  
   goToRegisterPage(){
     this.navCtrl.navigateForward('/register');
-  }
- 
-
-  
+  }  
   paginas(){
     this.navCtrl.navigateForward('paginas')
   }
