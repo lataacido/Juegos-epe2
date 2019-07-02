@@ -19,7 +19,7 @@ export class CatalinariosPage implements OnInit {
     this.navController.navigateForward('tabs')
   }
  kerrigan : string="kerrigan";
-//muestra un mensaje de alerta indicando que es parte de los personajes principales.
+//muestra un mensaje de alerta indicando que es parte de los personajes principales..
   async verSeleccion(){
     if(this.boton){
 
