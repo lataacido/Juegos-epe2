@@ -7,7 +7,7 @@
 //export const environment = {
  // production: false
 //};
-// conexion de fire base
+// conexion de fire base Terro
 export const environment = {
   production: false,
   firebase: {
@@ -16,7 +16,7 @@ export const environment = {
   databaseURL: "https://ionic-4-firebase-login-f8d8a.firebaseio.com",
   projectId: "ionic-4-firebase-login-f8d8a",
   storageBucket: "ionic-4-firebase-login-f8d8a.appspot.com",
-  messagingSenderId: "143691030009",
+  messagingSenderId: "143691030009"
 
   }
  };

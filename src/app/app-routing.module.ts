@@ -18,7 +18,12 @@ const routes: Routes = [
   { path: 'conexfirebase', loadChildren: './conexfirebase/conexfirebase.module#ConexfirebasePageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
-  { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardPageModule' }
+  { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardPageModule' },
+  { path: 'Harolds', loadChildren: './Harolds/Harolds.module#HaroldsPageModule' },
+  { path: 'humanos', loadChildren: './Harolds/Razas/humanos/humanos.module#HumanosPageModule' },
+  { path: 'nomuertos', loadChildren: './Harolds/Razas/nomuertos/nomuertos.module#NomuertosPageModule' },
+  { path: 'orcos', loadChildren: './Harolds/Razas/orcos/orcos.module#OrcosPageModule' },
+  { path: 'nelf', loadChildren: './Harolds/Razas/nelf/nelf.module#NelfPageModule' }
 
 ];
 @NgModule({

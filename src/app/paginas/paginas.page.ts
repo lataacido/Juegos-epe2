@@ -34,7 +34,7 @@ export class PaginasPage implements OnInit {
     this.navController.navigateForward('edgardhenriquez')
   }
 
-  felipe(){
-    this.navController.navigateForward('felipe')
+  harol(){
+    this.navController.navigateForward('Harolds')
   }
 }

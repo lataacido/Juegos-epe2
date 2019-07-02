@@ -11,6 +11,7 @@
               <ion-icon slot="icon-only" name="home" style="color:rgb(88, 4, 4)"></ion-icon>
             </ion-button>
             
+            
         </ion-buttons>
         <ion-title>Init Game</ion-title>
       </ion-toolbar>
@@ -35,25 +36,41 @@
     
   <ion-grid fixed>
       <ion-row>
+          <ion-col text-center>
+          Agregar Juegos 
+          </ion-col>
+        </ion-row>
+      <ion-row>
         <ion-col>
           <ion-item>
-            <ion-input placeholder=" Name" [(ngModel)]="studentName"></ion-input>
-          </ion-item>
-        </ion-col>
-        <ion-col>
-          <ion-item>
-            <ion-input placeholder=" Age" [(ngModel)]="studentAge"></ion-input>
-          </ion-item>
-        </ion-col>
-        <ion-col>
-          <ion-item>
-            <ion-input placeholder=" Address" [(ngModel)]="studentAddress"></ion-input>
+            <ion-input placeholder="Nombre" [(ngModel)]="juegosNombre"></ion-input>
           </ion-item>
         </ion-col>
       </ion-row>
+    <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-input placeholder=" Precio" [(ngModel)]="juegosPrecio"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+    <ion-row>
+        <ion-col>
+          <ion-item>
+            <ion-input placeholder="Plataforma" [(ngModel)]="juegosPlata"></ion-input>
+          </ion-item>
+        </ion-col>        
+      </ion-row>
+      <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-input placeholder="URL Imagene" [(ngModel)]="juegosURL"></ion-input>
+            </ion-item>
+          </ion-col>        
+        </ion-row>
       <ion-row>
         <ion-col text-center>
-          <ion-button (click)="CreateRecord()" [disabled]="!studentName || !studentAge || !studentAddress">
+          <ion-button (click)="CreateRecord()" [disabled]="!juegosNombre || !juegosPrecio || !juegosPlata || !juegosURL">
             <ion-icon size="small" slot="icon-only" name="add"></ion-icon>
             &nbsp;Create Record
           </ion-button>
@@ -65,8 +82,10 @@
     <ion-card *ngFor="let item of students">
       <span *ngIf="!item.isEdit; else elseBlock">
         <ion-card-header>
-          <ion-card-title>{{item.Name}} of {{item.Age}} years</ion-card-title>
-          <ion-card-subtitle>From: {{item.Address}}</ion-card-subtitle>
+            <ion-img src="{{item.URL}}"></ion-img>
+          <ion-card-title>{{item.Nombre}} </ion-card-title>
+          <ion-card-subtitle>Precio:${{item.Precio}}</ion-card-subtitle>
+          <ion-card-subtitle>Plataforma: {{item.Plata}}</ion-card-subtitle>
         </ion-card-header>
         <ion-card-content>
   
@@ -104,17 +123,21 @@
         </ion-card-header>
         <ion-card-content>
           <ion-item>
-            <ion-label><strong>Name</strong></ion-label>
-            <ion-input type="text" [(ngModel)]="item.EditName"></ion-input>
+            <ion-label><strong>Nombre</strong></ion-label>
+            <ion-input type="text" [(ngModel)]="item.EditNombre"></ion-input>
           </ion-item>
           <ion-item>
-            <ion-label><strong>Age</strong></ion-label>
-            <ion-input type="text" [(ngModel)]="item.EditAge"></ion-input>
+            <ion-label><strong>Precio</strong></ion-label>
+            <ion-input type="text" [(ngModel)]="item.EditPrecio"></ion-input>
           </ion-item>
           <ion-item>
-            <ion-label><strong>Address</strong></ion-label>
-            <ion-input type="text" [(ngModel)]="item.EditAddress"></ion-input>
+            <ion-label><strong>Plataforma</strong></ion-label>
+            <ion-input type="text" [(ngModel)]="item.EditPlata"></ion-input>
           </ion-item>
+          <ion-item>
+              <ion-label><strong>URL Imagene</strong></ion-label>
+              <ion-input type="text" [(ngModel)]="item.EditURL"></ion-input>
+            </ion-item>
         </ion-card-content>
       </ng-template>
     </ion-card>

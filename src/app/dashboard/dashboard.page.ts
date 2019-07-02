@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {AlertController} from '@ionic/angular';
 import { NavController } from '@ionic/angular';
 import { AuthenticateService } from '../services/authentication.service';
-
 import { CrudService } from '../conexfirebase/conexfirebase.page';
 
 @Component({
@@ -10,13 +9,15 @@ import { CrudService } from '../conexfirebase/conexfirebase.page';
   templateUrl: './dashboard.page.html',
   styleUrls: ['./dashboard.page.scss'],
 })
+
 export class DashboardPage implements OnInit {
  
  
   students: any;
-  studentName: string;
-  studentAge: number;
-  studentAddress: string;
+  juegosNombre: string;
+  juegosPrecio: number;
+  juegosPlata: string;
+  juegosURL: string;
   userEmail: string;
  
   constructor(
@@ -42,15 +43,17 @@ export class DashboardPage implements OnInit {
         return {
           id: e.payload.doc.id,
           isEdit: false,
-          Name: e.payload.doc.data()['Name'],
-          Age: e.payload.doc.data()['Age'],
-          Address: e.payload.doc.data()['Address'],
+          Nombre: e.payload.doc.data()['Nombre'],
+          Precio: e.payload.doc.data()['Precio'],
+          Plata: e.payload.doc.data()['Plata'],
+          URL:e.payload.doc.data()['URL'],
         };
       })
       console.log(this.students);
 
     });
   }
+  
  
   logout(){
     this.authService.logoutUser()
@@ -66,13 +69,15 @@ export class DashboardPage implements OnInit {
   
   CreateRecord() {
     let record = {};
-    record['Name'] = this.studentName;
-    record['Age'] = this.studentAge;
-    record['Address'] = this.studentAddress;
+    record['Nombre'] = this.juegosNombre;
+    record['Precio'] = this.juegosPrecio;
+    record['Plata'] = this.juegosPlata;
+    record['URL'] = this.juegosURL;
     this.crudService.create_NewStudent(record).then(resp => {
-      this.studentName = "";
-      this.studentAge = undefined;
-      this.studentAddress = "";
+      this.juegosNombre = "";
+      this.juegosPrecio = undefined;
+      this.juegosPlata = "";
+      this.juegosURL = "";
       console.log(resp);
     })
       .catch(error => {
@@ -86,16 +91,18 @@ export class DashboardPage implements OnInit {
 
   EditRecord(record) {
     record.isEdit = true;
-    record.EditName = record.Name;
-    record.EditAge = record.Age;
-    record.EditAddress = record.Address;
+    record.EditNombre = record.Nombre;
+    record.EditPrecio = record.Precio;
+    record.EditPlata = record.Plata;
+    record.EditURL = record.URL;
   }
 
   UpdateRecord(recordRow) {
     let record = {};
-    record['Name'] = recordRow.EditName;
-    record['Age'] = recordRow.EditAge;
-    record['Address'] = recordRow.EditAddress;
+    record['Nombre'] = recordRow.EditNombre;
+    record['Precio'] = recordRow.EditPrecio;
+    record['Plata'] = recordRow.EditPlata;
+    record['URL'] = recordRow.EditURL;
     this.crudService.update_Student(recordRow.id, record);
     recordRow.isEdit = false;
   }
