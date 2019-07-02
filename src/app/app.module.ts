@@ -16,6 +16,8 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AuthenticateService } from './services/authentication.service';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import * as firebase from 'firebase';
+
+
 firebase.initializeApp(environment.firebase);
 
 
