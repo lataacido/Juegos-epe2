@@ -107,4 +107,13 @@ export class DashboardPage implements OnInit {
     recordRow.isEdit = false;
   }
 
+  
+  paginas(){
+    this.navController.navigateForward('paginas')
+  }
+
+  pagame(){
+    this.navController.navigateForward('pagame')
+  }
+
 }
