@@ -8,6 +8,7 @@
  // production: false
 //};
 // conexion de fire base Terro
+/*
 export const environment = {
   production: false,
   firebase: {
@@ -21,6 +22,22 @@ export const environment = {
   }
  };
 
+*/
+
+//conexion de fire base del leche
+export const environment = {
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyDTLXArIj3M8XaXyROoikyimL8RIg2rOqs",
+    authDomain: "eva1-24441.firebaseapp.com",
+    databaseURL: "https://eva1-24441.firebaseio.com",
+    projectId: "eva1-24441",
+    storageBucket: "eva1-24441.appspot.com",
+    messagingSenderId: "428489244219"
+  
+
+  }
+ };
 
 /*
  * For easier debugging in development mode, you can import the following file
