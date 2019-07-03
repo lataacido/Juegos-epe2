@@ -6,7 +6,7 @@ const routes: Routes = [
   { path: '', loadChildren: './tabs/tabs.module#TabsPageModule' },
   { path: 'catalinarios', loadChildren: './catalinarios/catalinarios.module#CatalinariosPageModule' },
   { path: 'estebanterrones', loadChildren: './estebanterrones/estebanterrones.module#EstebanterronesPageModule' },
-  { path: 'felipe', loadChildren: './felipe/felipe.module#FelipePageModule' },
+  
   { path: 'edgardhenriquez', loadChildren: './edgardhenriquez/edgardhenriquez.module#EdgardhenriquezPageModule' },
   { path: 'paginas', loadChildren: './paginas/paginas.module#PaginasPageModule' },
   { path: 'pagame', loadChildren: './pagame/pagame.module#PagamePageModule' },
@@ -20,10 +20,10 @@ const routes: Routes = [
   { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
   { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardPageModule' },
   { path: 'Harolds', loadChildren: './Harolds/Harolds.module#HaroldsPageModule' },
-  { path: 'humanos', loadChildren: './Harolds/Razas/humanos/humanos.module#HumanosPageModule' },
-  { path: 'nomuertos', loadChildren: './Harolds/Razas/nomuertos/nomuertos.module#NomuertosPageModule' },
-  { path: 'orcos', loadChildren: './Harolds/Razas/orcos/orcos.module#OrcosPageModule' },
-  { path: 'nelf', loadChildren: './Harolds/Razas/nelf/nelf.module#NelfPageModule' }
+  { path: 'humanos', loadChildren: './Harolds/razas/humanos/humanos.module#HumanosPageModule' },
+  { path: 'nomuertos', loadChildren: './Harolds/razas/nomuertos/nomuertos.module#NomuertosPageModule' },
+  { path: 'orcos', loadChildren: './Harolds/razas/orcos/orcos.module#OrcosPageModule' },
+  { path: 'nelf', loadChildren: './Harolds/razas/nelf/nelf.module#NelfPageModule' }
 
 ];
 @NgModule({
