@@ -28,6 +28,13 @@ El proyecto se desenvuelve en la plataforma Visual Studio Code y el framework a 
 ![alt text](https://firebasestorage.googleapis.com/v0/b/eva1-24441.appspot.com/o/anjanath.jpg?alt=media&token=f7b10ee6-06b8-4892-bc51-425511acf6e9)<br>
 ![alt text](https://firebasestorage.googleapis.com/v0/b/eva1-24441.appspot.com/o/fondoSC.jpg?alt=media&token=27c4ef02-21fa-4279-9a40-bacd35d1b7ab)<br>
 
+<h1>CAPTURAS DE LA APP</h1>
+
+![alt text](https://firebasestorage.googleapis.com/v0/b/eva1-24441.appspot.com/o/11.jpg?alt=media&token=f7327e8f-756c-4f7d-ac67-2a3e2eff4b5e)<br>
+![alt text](https://firebasestorage.googleapis.com/v0/b/eva1-24441.appspot.com/o/22.jpg?alt=media&token=817895e6-2d2b-4b9f-a081-8b56123ec110)<br>
+![alt text](https://firebasestorage.googleapis.com/v0/b/eva1-24441.appspot.com/o/33.jpg?alt=media&token=827beab3-8265-4a9f-b56b-8d904659ee38)<br>
+![alt text](https://firebasestorage.googleapis.com/v0/b/eva1-24441.appspot.com/o/44.jpg?alt=media&token=bb856821-acf9-4464-aa82-c55da90fec51)<br>
+
 <h4>El proyecto esta conformado por:
 <br>
 Catalina Rios<br>
