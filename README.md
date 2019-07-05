@@ -2,19 +2,23 @@
 
 <h1>DESCRIPCION</h1> 
 <p>Init games, una plataforma
-informativa de videojuegos, en ella podras
-gestionar tus videojuegos y saber sobre las nuevas tendencias
+informativa y gestionadora de videojuegos, en ella podras
+gestionar todos tus videojuegos y saber sobre las nuevas tendencias
+  
+El proyecto se desenvuelve en la plataforma Visual Studio Code y el framework a trabajar es IONIC 4 con Angular, el cual nos permite desarrollar aplicaciones móviles en IOS,  Android y Windows Mobile, el proyecto esta realizado como una de gestión (CRUD por sus siglas en ingles) la cual abarca todos los puntos expuestos en la prueba EPE3 Y 4 con algunos puntos a expandir en el trabajo.
+
 </p>
 <br>
 <h1>ICONOS</h1>
 
 <h3>Icono principal de la app</h3>
   
-agregar nuevo icono <br>
+![alt text](https://firebasestorage.googleapis.com/v0/b/eva1-24441.appspot.com/o/icon.png?alt=media&token=cdf51ffd-81c0-4fdf-99f4-f6ac5fa40fcb)
+ <br>
 
 <h3>Splash screen</h3>
 
-![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/resources/android/splash/drawable-land-hdpi-screen.png)
+![alt text](https://firebasestorage.googleapis.com/v0/b/eva1-24441.appspot.com/o/splash.png?alt=media&token=d6109ebc-c1a7-4b84-ba15-21b2e185f34e)
 
 
 <h1>IMAGENES</h1>
