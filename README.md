@@ -7,11 +7,9 @@ El proyecto se desenvuelve en la plataforma Visual Studio Code y el framework a 
 <br>
 <h1>ICONOS</h1>
 <h3>Icono principal de la app</h3>  
-![alt text](https://firebasestorage.googleapis.com/v0/b/eva1-24441.appspot.com/o/icon.png?alt=media&token=cdf51ffd-81c0-4fdf-99f4-f6ac5fa40fcb)
-<br>
+![alt text](https://firebasestorage.googleapis.com/v0/b/eva1-24441.appspot.com/o/icon.png?alt=media&token=cdf51ffd-81c0-4fdf-99f4-f6ac5fa40fcb)<br>
 <h3>Splash screen</h3>
-![alt text](https://firebasestorage.googleapis.com/v0/b/eva1-24441.appspot.com/o/splash.png?alt=media&token=d6109ebc-c1a7-4b84-ba15-21b2e185f34e)
-<br>
+![alt text](https://firebasestorage.googleapis.com/v0/b/eva1-24441.appspot.com/o/splash.png?alt=media&token=d6109ebc-c1a7-4b84-ba15-21b2e185f34e)<br>
 <h1>IMAGENES</h1>
 ![alt text](https://firebasestorage.googleapis.com/v0/b/eva1-24441.appspot.com/o/ALIANZAFONDO.png?alt=media&token=89c19813-c6e2-4b64-9e69-02fe2efaec60)
 <br>
