@@ -1,8 +1,12 @@
 <h1>INIT GAME</h1>
 <h1>DESCRIPCION</h1> 
-<p>
-Init games, una plataforma informativa y gestionadora de videojuegos, en ella podras gestionar todos tus videojuegos y saber sobre las nuevas tendencias.  
-El proyecto se desenvuelve en la plataforma Visual Studio Code y el framework a trabajar es IONIC 4 con Angular, el cual nos permite desarrollar aplicaciones móviles en IOS,  Android y Windows Mobile, el proyecto esta realizado como una de gestión (CRUD por sus siglas en ingles) la cual abarca todos los puntos expuestos en la prueba EPE3 Y 4 con algunos puntos a expandir en el trabajo.
+<p>Init games, una plataforma 
+  informativa y gestionadora de videojuegos,
+  en ella podras gestionar todos tus videojuegos y saber sobre las nuevas tendencias.  
+El proyecto se desenvuelve en la plataforma Visual Studio Code y el framework a trabajar es IONIC 4 
+  con Angular, el cual nos permite desarrollar aplicaciones móviles en IOS,  Android y Windows Mobile,
+  el proyecto esta realizado como una de gestión (CRUD por sus siglas en ingles) la cual abarca todos 
+  los puntos expuestos en la prueba EPE3 Y 4 con algunos puntos a expandir en el trabajo.
 </p><br>
 
 <h1>ICONOS</h1>
