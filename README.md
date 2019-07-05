@@ -19,7 +19,7 @@ agregar nuevo icono <br>
 
 <h1>IMAGENES</h1>
 
-![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/fondoSC.jpg)<br>
+![alt text](https://firebasestorage.googleapis.com/v0/b/eva1-24441.appspot.com/o/ALIANZAFONDO.png?alt=media&token=89c19813-c6e2-4b64-9e69-02fe2efaec60)<br>
 ![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/samus.png)<br>
 ![alt text](https://github.com/lataacido/Juegos-epe2/blob/master/src/assets/zerosuit.jpg)<br>
 
