@@ -25,7 +25,7 @@ El proyecto se desenvuelve en la plataforma Visual Studio Code y el framework a 
 
 <h4>El proyecto esta conformado por:
 <br>
-Catalina Rios<br>
+Catalina Rios<br> 
 Harolds Rivers<br>
 Esteban Terrones<br>
 Edgard Henriquez</h4>
